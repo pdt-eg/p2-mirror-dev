@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+	  <groupId>org.pex.p2-mirror</groupId>
+	  <artifactId>main</artifactId>
+	  <version>0.0.1</version>	
+	</parent>
+	
+	<groupId>org.pex.p2-mirror</groupId>
+	<artifactId>aggregator</artifactId>
+	<version>0.0.1</version>
+	<packaging>pom</packaging>
+
+	<repositories>
+		<repository>
+			<id>juno</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/releases/juno</url>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>tycho-p2-extras-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>mirror</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+				
+					<!-- source repositories to mirror from -->					
+					<source>
+					
+						<!-- Symfony, Twig, Composer, Doctrine etc -->					
+						<!-- dev build -->
+						<repository>
+							<url>http://pulse00.github.com/p2-nightly/</url>
+							<layout>p2</layout>
+						</repository>
+
+						<!-- Zen Coding-->
+						<!-- https://github.com/emmetio/emmet-eclipse -->
+						<repository>
+							<url>http://emmet.io/eclipse/updates/</url>
+							<layout>p2</layout>
+						</repository>
+						
+						<!-- Yii -->
+						<repository>
+							<url>http://yiiclipse.maziarz.org/updatesite/DEV/</url>
+							<layout>p2</layout>
+						</repository>
+
+						<!-- NOT YET CHECKED FOR AGREEMENT -->
+						<!-- seems unmaintaned -->
+						<repository>
+							<url>http://logviewer.eclipselabs.org.codespot.com/git/de.anbos.eclipse.logviewer.update/</url>
+							<layout>p2</layout>
+						</repository>
+						
+						
+						<!-- NOT YET CHECKED FOR AGREEMENT -->
+						<!-- seems unmaintaned, upgraded to juno and created a fork on github: https://github.com/pulse00/apdt -->
+						<repository>
+							<url>http://apdt.googlecode.com/svn/trunk/org.phpaspect.apdt.updatesite/</url>
+							<layout>p2</layout>
+						</repository>
+						
+						<!-- PTI -->
+						<repository>
+							<url>http://www.phpsrc.org/eclipse/pti/</url>
+							<layout>p2</layout>
+						</repository>
+						
+						<!-- NOT YET CHECKED FOR AGREEMENT -->
+						<repository>
+							<url>http://magento-plugin.googlecode.com/svn/update_site</url>
+							<layout>p2</layout>
+						</repository>
+						
+						<!-- NOT YET CHECKED FOR AGREEMENT -->
+						<!-- Drupal plugin -->
+						<repository>
+							<url>http://xtnd.us/downloads/eclipse</url>
+							<layout>p2</layout>
+						</repository>
+						
+						<!-- php-maven -->
+						<repository>
+							<url>http://www.php-maven.org/eclipse/update</url>
+							<layout>p2</layout>
+						</repository>
+						
+						<!-- NOT YET CHECKED FOR AGREEMENT -->
+						<repository>
+							<url>http://eclipse.piece-framework.com</url>
+							<layout>p2</layout>
+						</repository>
+
+
+						<!-- NOT YET CHECKED FOR AGREEMENT -->
+						<!-- coffeescript editor -->
+						<repository>
+							<url>http://coffeescript-editor.eclipselabs.org.codespot.com/hg/</url>
+							<layout>p2</layout>
+						</repository>
+
+
+						<!-- NOT YET CHECKED FOR AGREEMENT -->
+						<!-- logviewer -->
+						<repository>
+							<url>http://logviewer.eclipselabs.org.codespot.com/git/de.anbos.eclipse.logviewer.update/</url>
+							<layout>p2</layout>
+						</repository>
+
+						<!-- NOT YET CHECKED FOR AGREEMENT -->
+						<!-- jquery -->
+						<repository>
+							<url>http://svn.codespot.com/a/eclipselabs.org/jsdt-jquery/updatesite</url>
+							<layout>p2</layout>
+						</repository>			
+
+
+						<!-- NOT YET CHECKED FOR AGREEMENT -->
+						<!-- eclipse color themes -->
+						<repository>
+							<url>http://eclipse-color-theme.github.com/update/</url>
+							<layout>p2</layout>
+						</repository>			
+						
+						
+					</source>
+
+					<!-- The destination directory to mirror to. -->
+					<destination>${project.build.directory}/mirror</destination>
+					
+					<!-- If we don't set this to true, build fails for certain repos due to missing older .jars -->
+					<latestVersionOnly>true</latestVersionOnly>
+					
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

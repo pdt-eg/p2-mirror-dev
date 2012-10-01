@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.pex.p2-mirror</groupId>
+	<artifactId>main</artifactId>
+	<version>0.0.1</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>../PEX-Core</module>
+		<!--TODO: the build fails for some reason due to the missing org.getcomposer bundle, which should be available on p2.dubture.com.... -->
+		<module>../Composer-Eclipse-Plugin</module>
+		<module>org.pex.p2-mirror.repo</module>
+		<module>org.pex.p2-mirror.aggregator</module>
+	</modules>
+
+	<!-- Currently the build needs 2 passed due to https://bugs.eclipse.org/bugs/show_bug.cgi?id=353889 -->
+	<!-- Otherwise the first build will fail due to the non-existent aggregated 
+		local repository -->
+	<profiles>
+		<profile>
+			<id>packageRepo</id>
+			<modules>
+				<module>org.pex.p2-mirror.mirror</module>
+			</modules>
+		</profile>
+	</profiles>
+
+	<repositories>
+		<repository>
+			<id>juno</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/releases/juno</url>
+		</repository>
+	</repositories>
+
+
+	<scm>
+		<url>https://github.com/pulse00/p2-mirror</url>
+		<connection>scm:git:git@github.com:pulse00/p2-mirror.git</connection>
+		<developerConnection>scm:git:git@github.com:pulse00/p2-mirror.git</developerConnection>
+	</scm>
+
+	<developers>
+		<developer>
+			<email>r.gruendler@gmail.com</email>
+			<name>Robert Gründler</name>
+			<url>https://github.com/pulse00</url>
+			<id>pulse00</id>
+		</developer>
+	</developers>
+
+	<properties>
+		<tycho-version>0.15.0</tycho-version>
+		<github.global.server>github</github.global.server>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
