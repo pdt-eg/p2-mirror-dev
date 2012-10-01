@@ -1,0 +1,48 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+#featurewrapper {
+ 	margin-left: 155px;
+}
+
+
+.bs-docs-sidenav {
+    background-color: #FFFFFF;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    margin: 30px 0 0;
+    padding: 0;
+    width: 228px;
+}
+
+.bs-docs-sidenav > li:first-child > a {
+    border-radius: 6px 6px 0 0;
+}
+.bs-docs-sidenav > li > a {
+	width: 258px;
+    border: 1px solid #E5E5E5;
+    display: block;
+    margin: 0 0 -1px;
+    padding: 8px 14px;
+}
+
+.hero-unit {
+    background-color: #EEEEEE;
+    border-radius: 6px 6px 6px 6px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.spacer {
+
+	margin-bottom: 20px;
+}
+
+.cta {
+ 	margin-left: 135px;
+	margin-top: 25px;	
+}
