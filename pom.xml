@@ -53,6 +53,27 @@
 				<extensions>true</extensions>
 			</plugin>
 
+			<!-- clean the repo otherwise the old .jars pile up -->
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>2.4.1</version>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory>${project.basedir}/../../p2-mirror-dev-repo/plugins</directory>
+							<includes>
+								<include>*.jar</include>
+							</includes>
+						</fileset>
+						<fileset>
+							<directory>${project.basedir}/../../p2-mirror-dev-repo/features</directory>
+							<includes>
+								<include>*.jar</include>
+							</includes>
+						</fileset>						
+					</filesets>
+				</configuration>
+			</plugin>		
 		</plugins>
 	</build>
 </project>
