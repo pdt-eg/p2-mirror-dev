@@ -42,6 +42,12 @@
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/releases/juno</url>
 		</repository>
+
+                <repository>
+                        <id>orbit</id>
+                        <layout>p2</layout>
+                        <url>http://download.eclipse.org/tools/orbit/downloads/drops/R20110523182458/repository/</url>
+                </repository>
 	</repositories>
 
 	<build>
