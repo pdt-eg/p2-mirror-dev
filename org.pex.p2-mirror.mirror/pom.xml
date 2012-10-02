@@ -68,7 +68,7 @@
 	            </goals>
 	            <configuration>
 				  <overwrite>true</overwrite>
-	              <outputDirectory>${outputdir}</outputDirectory>
+	              <outputDirectory>${project.basedir}/../../p2-mirror-dev-repo</outputDirectory>
 	              <resources>
 	                <resource>
 	                  <directory>target/repository</directory>	                  
