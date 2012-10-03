@@ -138,6 +138,13 @@
 							<layout>p2</layout>
 						</repository>			
 						
+
+						<!-- NOT YET CHECKED FOR AGREEMENT -->
+						<!-- eclipse color themes -->
+						<repository>
+							<url>http://winterstein.me.uk/projects/tt-update-site/</url>
+							<layout>p2</layout>
+						</repository>			
 						
 					</source>
 

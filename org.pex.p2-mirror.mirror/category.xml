@@ -109,6 +109,9 @@
       <category name="editors"/>
    </feature>
 
+   <feature id="thinktank.markdown.feature" version="0.0.0">
+      <category name="editors"/>
+   </feature>
 
    <category-def name="frameworks" label="Frameworks / Content Management">
       <description>
