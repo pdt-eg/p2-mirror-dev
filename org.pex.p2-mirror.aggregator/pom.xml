@@ -101,7 +101,7 @@
 							<layout>p2</layout>
 						</repository>
 						
-						<!-- NOT YET CHECKED FOR AGREEMENT -->
+						<!-- MakeGood plugin -->
 						<repository>
 							<url>http://eclipse.piece-framework.com</url>
 							<layout>p2</layout>
@@ -140,11 +140,20 @@
 						
 
 						<!-- NOT YET CHECKED FOR AGREEMENT -->
-						<!-- eclipse color themes -->
+						<!-- markdown plugin -->
 						<repository>
 							<url>http://winterstein.me.uk/projects/tt-update-site/</url>
 							<layout>p2</layout>
-						</repository>			
+						</repository>
+
+
+						<!-- NOT YET CHECKED FOR AGREEMENT -->
+						<!-- less plugin -->
+						<repository>
+							<url>http://www.normalesup.org/~simonet/soft/ow/update/</url>
+							<layout>p2</layout>
+						</repository>
+
 						
 					</source>
 

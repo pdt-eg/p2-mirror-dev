@@ -37,6 +37,7 @@
       <category name="editors"/>
    </feature>
 
+   <!-- zen coding feature -->
    <feature id="io.emmet.eclipse" version="0.0.0">
       <category name="editors"/>
    </feature>   
@@ -97,18 +98,36 @@
       <category name="libraries"/>
    </feature>
 
+   <!-- coffeescript feature -->
    <feature id="csep.feature" version="0.0.0">
       <category name="editors"/>
    </feature>
 
+   <!-- logviewer -->
    <feature id="de.anbos.eclipse.logviewer.feature" version="0.0.0">
       <category name="misc"/>
    </feature>
 
+   <!-- eclipse color themes -->
    <feature id="com.github.eclipsecolortheme.feature" version="0.0.0">
       <category name="editors"/>
    </feature>
 
+   <!--IDE for the Closure Templates (http://code.google.com/closure/templates/) -->
+   <feature id="net.vtst.ow.eclipse.js.closure.feature" version="0.0.0">
+      <category name="editors"/>
+   </feature>
+
+   <!--IDE for the LESS stylesheet language (http://lesscss.org/) -->
+   <feature id="net.vtst.ow.eclipse.less.feature" version="0.0.0">
+      <category name="editors"/>
+   </feature>   
+
+   <!--Extension of JSDT to support Closure Compiler and Closure Library. -->
+   <feature id="net.vtst.ow.eclipse.soy.feature" version="0.0.0">
+      <category name="editors"/>
+   </feature>
+   
    <feature id="thinktank.markdown.feature" version="0.0.0">
       <category name="editors"/>
    </feature>
