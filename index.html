@@ -1,127 +1,206 @@
 <!DOCTYPE html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Eclipse p2 repository (development snapshot) |  PDT-Extensions Group </title>
-        <meta name="description" content="Eclipse p2 repository (development snapshot) |  PDT-Extensions Group ">
-        <meta name="viewport" content="width=device-width">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Eclipse p2 repository (development snapshot) | PDT-Extensions Group</title>
+<meta name="description" content="Eclipse p2 repository (development snapshot) |  PDT-Extensions Group ">
+<meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 60px;
-                padding-bottom: 40px;
-            }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-        <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<style>
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+</style>
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="css/main.css">
 
-        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
-    </head>
-    <body>
-        <a href="https://github.com/pdt-eg/p2-mirror"><img style="position: absolute; top: 0; right: 0; border: 0;z-index:999999;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
-        <!--[if lt IE 7]>
+<script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+</head>
+<body>
+	<a href="https://github.com/pdt-eg/p2-mirror"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 999999;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+	<!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a target="_blank" href="http://browsehappy.com/">Upgrade your browser today</a> or <a target="_blank" href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
-        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+	<!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="#">PDT Extensions Group / p2 repository</a>
-                </div>
-            </div>
-        </div>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</a> <a class="brand" href="#">The <span>PDT Extensions Group</span> eclipse p2 repository</a>
+			</div>
+		</div>
+	</div>
 
-        <div class="container">
+	<div class="container">
 
-            <!-- Main hero unit for a primary marketing message or call to action -->
-            <div class="hero-unit">                
-                <p>The PDT Extension Group p2 repository. Add this URL to your eclipse updatesite mechanism and choose from the features below.</p>
-                <p><a target="_blank" href="http://github.com/pdt-eg" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-            </div>
+		<!-- Main hero unit for a primary marketing message or call to action -->
+		<div class="hero-unit">
+			<p>The PDT Extension Group p2 repository. Add this URL to your eclipse updatesite mechanism and choose from the features below.</p>
+		    <a id="p2url" href="http://p2-dev.pdt-extensions.org/">http://p2-dev.pdt-extensions.org/</a>
+			<p>Want to add your feature or know a feature which should be added? Create an issue on <a target="_blank" href="https://github.com/pdt-eg/p2-mirror/issues">github</a> and we'll add it to the repository.</p>
+		</div>
 
-            <div id="featurewrapper">
+		<div id="featurewrapper">
 
-                <div class="upper">
-                    <div class="span4 bs-docs-sidebar">
-                        <h2>PHP Core extensions</h2>
-                        <ul class="nav nav-list bs-docs-sidenav">
-                            <li><a target="_blank" href="http://pdt-extensions.org/">PDT Extensions Core Feature</a></li>
-                            <li><a target="_blank" href="http://www.php-maven.org/branches/2.0-SNAPSHOT/tut-usingeclipse.html">PHP Maven</a></li>
-                            <li><a target="_blank" href="http://www.phpsrc.org/">PHP CodeSniffer Support</a></li>
-                            <li><a target="_blank" href="http://www.phpsrc.org/">PHPUnit Support</a></li>
-                            <li><a target="_blank" href="http://www.phpsrc.org/">PHP Depend Support</a></li>
-                            <li><a target="_blank" href="http://www.phpsrc.org/">PHP Copy/Paste Detector Support</a></li>
-                            <li><a target="_blank" href="http://piece-framework.com/projects/makegood/wiki">MakeGood plugin (continuous testing)</a></li>
-                        </ul>                
-                    </div>
+			<div class="tabbable">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#pane1" data-toggle="tab">PHP Core Extensions</a></li>
+					<li><a href="#pane2" data-toggle="tab">Frameworks/Platforms</a></li>
+					<li><a href="#pane3" data-toggle="tab">Text editors / extensions</a></li>
+					<li><a href="#pane4" data-toggle="tab">Miscellaneous</a></li>
+				</ul>
+				<div class="tab-content">
+					<div id="pane1" class="tab-pane active">
+						<div class="tabbable tabs-left">
+							<ul class="nav nav-tabs">
+								<li><a href="#pex-core" data-toggle="tab">PDT Extensions Core Feature</a></li>
+								<li><a href="#phpmaven" data-toggle="tab">PHP Maven</a></li>
+								<li><a href="#phpcs" data-toggle="tab">PHP CodeSniffer Support</a></li>
+								<li><a href="#phpunit" data-toggle="tab">PHPUnit Support</a></li>
+								<li><a href="#phpdepend" data-toggle="tab">PHP Depend Support</a></li>
+								<li><a href="#phpcpd" data-toggle="tab">PHP Copy/Paste Detector Support</a></li>
+								<li><a href="#makegood" data-toggle="tab">MakeGood plugin (continuous testing)</a></li>
+							</ul>
+							<div class="tab-content">
+								 <div id="pex-core" class="tab-pane active">
+								     <a target="_blank" href="http://pdt-extensions.org/">PDT Extensions Core Feature</a>
+								 </div>
+								 <div id="phpmaven" class="tab-pane">
+								     <a target="_blank" href="http://www.php-maven.org/branches/2.0-SNAPSHOT/tut-usingeclipse.html">PHP Maven</a>
+								 </div>
+								 <div id="phpcs" class="tab-pane">
+								     <a target="_blank" href="http://www.phpsrc.org/">PHP CodeSniffer Support</a>
+								 </div>
+								 <div id="phpunit" class="tab-pane">
+								     <a target="_blank" href="http://www.phpsrc.org/">PHPUnit Support</a>
+								 </div>
+								 <div id="phpdepend" class="tab-pane">
+								     <a target="_blank" href="http://www.phpsrc.org/">PHP Depend Support</a>
+								 </div>
+								 <div id="phpcpd" class="tab-pane">
+								     <a target="_blank" href="http://www.phpsrc.org/">PHP Copy/Paste Detector Support</a>
+								 </div>
+								 <div id="makegood" class="tab-pane">
+								     <a target="_blank" href="http://piece-framework.com/projects/makegood/wiki">MakeGood plugin (continous testing)</a>
+								 </div>
+							</div>
+						</div>
+					</div>
+					<div id="pane2" class="tab-pane">
+						<div class="tabbable tabs-left">
+							<ul class="nav nav-tabs">
+								<li><a target="_blank" href="#symfony" data-toggle="tab">Symfony support</a></li>
+								<li><a target="_blank" href="#composer" data-toggle="tab">Composer support</a></li>
+								<li><a target="_blank" href="#phing" data-toggle="tab">Phing support</a></li>
+								<li><a target="_blank" href="#yii" data-toggle="tab">Yii support</a></li>
+								<li><a target="_blank" href="#drupal" data-toggle="tab">Drupal support</a></li>
+								<li><a target="_blank" href="#magento" data-toggle="tab">Magento support</a></li>
+							</ul>
+                            <div class="tab-content">
+                                 <div id="symfony" class="tab-pane active">
+                                     <a target="_blank" href="http://symfony.dubture.com">Symfony support</a>
+                                 </div>
+                                 <div id="yii" class="tab-pane">
+                                     <a target="_blank" href="http://yiiclipse.maziarz.org/">Yii support</a>
+                                 </div>
+                                 <div id="drupal" class="tab-pane">
+                                     <a target="_blank" href="http://groups.drupal.org/node/39938">Drupal support</a>
+                                 </div>
+                                 <div id="magento" class="tab-pane">
+                                     <a target="_blank" href="http://code.google.com/p/magento-plugin/">Magento support</a>
+                                 </div>
+                                 <div id="composer" class="tab-pane">
+                                     <a target="_blank" href="https://github.com/pulse00/Composer-Eclipse-Plugin">Composer support</a>
+                                 </div>
+                                 <div id="phing" class="tab-pane">
+                                     <a target="_blank" href="https://github.com/ganoro/phing-eclipse">Phing support</a>
+                                 </div>
+                            </div>
+						</div>
+					</div>
+					<div id="pane3" class="tab-pane">
+						<div class="tabbable tabs-left">
+							<ul class="nav nav-tabs">
+								<li><a href="#json" data-toggle="tab">Json editor</a></li>
+								<li><a href="#yedit" data-toggle="tab">Yaml editor</a></li>
+								<li><a href="#twig" data-toggle="tab">Twig editor</a></li>
+								<li><a href="#smarty" data-toggle="tab">Smarty editor</a></li>
+								<li><a href="#coffee" data-toggle="tab">Coffeescript editor</a></li>
+								<li><a href="#markdown" data-toggle="tab">Markdown editor</a></li>
+								<li><a href="#shelled" data-toggle="tab">Shell script editor</a></li>
+								<li><a href="#jquery" data-toggle="tab">Jquery integration</a></li>
+								<li><a href="#themes" data-toggle="tab">Eclipse color themes</a></li>
+							</ul>
+                            <div class="tab-content">
+                                 <div id="json" class="tab-pane active">
+                                     <a target="_blank" href="http://sourceforge.net/projects/eclipsejsonedit/">Json editor</a>
+                                 </div>
+                                 <div id="yedit" class="tab-pane">
+                                     <a target="_blank" href="https://github.com/oyse/yedit">Yedit - Yaml editor</a>
+                                 </div>
+                                 <div id="twig" class="tab-pane">
+                                     <a target="_blank" href="http://twig.dubture.com">Twig editor</a>
+                                 </div>
+                                 <div id="smarty" class="tab-pane">
+                                     <a target="_blank" href="http://code.google.com/p/smartypdt/">Smarty editor</a>
+                                 </div>
+                                 <div id="coffee" class="tab-pane">
+                                     <a target="_blank" href="https://github.com/adamschmideg/coffeescript-eclipse">Coffeescript editor</a>
+                                 </div>
+                                 <div id="markdown" class="tab-pane">
+                                     <a target="_blank" href="http://winterstein.me.uk/projects/tt-update-site/">Markdown editor</a>
+                                 </div>
+                                 <div id="shelled" class="tab-pane">
+                                     <a target="_blank" href="http://sourceforge.net/apps/trac/shelled/wiki/Documentation/InstallGuide">Shell script editor</a>
+                                 </div>
+                                 <div id="jquery" class="tab-pane">
+                                     <a target="_blank" href="http://marketplace.eclipse.org/content/jsdt-jquery/">Jquery integration</a>
+                                 </div>
+                                 <div id="themes" class="tab-pane">
+                                     <a target="_blank" href="http://eclipsecolorthemes.org">Eclipse color themes</a>
+                                 </div>
+                            </div>
+							
+						</div>
+					</div>
+					<div id="pane4" class="tab-pane">
+						<div class="tabbable tabs-left">
+							<ul class="nav nav-tabs">
+								<li><a href="#logviewer" data-toggle="tab">Logviewer plugin</a></li>
+								<li><a href="#apdt" data-toggle="tab">Aspect PHP Developement Tools</a></li>
+							</ul>
+                            <div class="tab-content">
+                                 <div id="logviewer" class="tab-pane">
+                                     <a target="_blank" href="http://code.google.com/a/eclipselabs.org/p/logviewer/">Logviewer plugin</a>
+                                 </div>
+                                 <div id="apdt" class="tab-pane active">
+                                     <a target="_blank" href="http://code.google.com/p/apdt/">Aspect PHP development tools</a>
+                                 </div>
+                            </div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- /.tab-content -->
+			</div>
+			<!-- /.tabbable -->
+		</div>
 
-                    <div class="span4 bs-docs-sidebar">
-                        <h2>Frameworks / Toolchains</h2>
-                        <ul class="nav nav-list bs-docs-sidenav">                    
-                            <li><a target="_blank" href="http://symfony.dubture.com">Symfony support</a></li>
-                            <li><a target="_blank" href="http://yiiclipse.maziarz.org/">Yii support</a></li>                    
-                            <li><a target="_blank" href="http://groups.drupal.org/node/39938">Drupal support</a></li>
-                            <li><a target="_blank" href="http://code.google.com/p/magento-plugin/">Magento support</a></li>
-                            <li><a target="_blank" href="https://github.com/pulse00/Composer-Eclipse-Plugin">Composer support</a></li>
-                            <li><a target="_blank" href="https://github.com/ganoro/phing-eclipse">Phing support</a></li>                            
-                        </ul>                
-                    </div>
-                </div>
+		<div class="clearfix"></div>
+		<hr>
+	</div>
+	<!-- /container -->
 
-                <div class="clearfix spacer"></div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
 
-                <div class="lower">
-                    <div class="span4 bs-docs-sidebar">
-                        <h2>Editors</h2>
-                        <ul class="nav nav-list bs-docs-sidenav">
-                            <li><a target="_blank" href="http://sourceforge.net/projects/eclipsejsonedit/">Json Editor</a></li>
-                            <li><a target="_blank" href="https://github.com/oyse/yedit">YEdit - Yaml Editor</a></li>
-                            <li><a target="_blank" href="http://twig.dubture.com">Twig editor</a></li>
-                            <li><a target="_blank" href="http://code.google.com/p/smartypdt/">Smarty editor</a></li>
-                            <li><a target="_blank" href="https://github.com/adamschmideg/coffeescript-eclipse">Coffeescript editor</a></li>
-                            <li><a target="_blank" href="http://marketplace.eclipse.org/content/jsdt-jquery/">JSDT Jquery Integration</a></li>
-                            <li><a target="_blank" href="http://eclipsecolorthemes.org">Eclipse color themes</a></li>                            
-                        </ul> 
-                    </div>
+	<script src="js/vendor/bootstrap.min.js"></script>
 
-                    <div class="span4 bs-docs-sidebar">
-                        <h2>Misc</h2>
-                        <ul class="nav nav-list bs-docs-sidenav">
-                            <li><a target="_blank" href="http://code.google.com/p/apdt/">Aspect PHP Developement Tools</a></li>                
-                            <li><a target="_blank" href="http://code.google.com/a/eclipselabs.org/p/logviewer/">Logviewer plugin</a></li>                    
-                        </ul> 
-                    </div>
-
-                </div>
-
-            </div>            
-
-            <div class="clearfix"></div>
-        
-            <div class="span12 cta">
-                <h3>Want to add your feature or know a feature which should be added?</h3>
-                <p>Create an issue on <a target="_blank" href="https://github.com/pdt-eg/p2-mirror/issues">github</a> and we'll add it to the repository.</p>
-            </div>
-        
-
-
-            <hr>
-        </div> <!-- /container -->
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
-    </body>
+	<script src="js/main.js"></script>
+</body>
 </html>
