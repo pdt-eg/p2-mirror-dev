@@ -4,6 +4,37 @@
    Author's custom styles
    ========================================================================== */
 
+.tab-content.outer .nav.nav-tabs li {
+
+    width: 280px;
+
+}
+
+#headertabs {
+
+
+}
+
+.tab-content.outer {
+
+    
+}
+
+#headertabs li {
+
+    font-size: 20px;
+}
+
+.tab-pane > a {
+    color: #333333;
+    display: block;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.tab-pane > a:hover {
+    text-decoration: underline;
+}
 
 #p2url {
 	color: #333333;
