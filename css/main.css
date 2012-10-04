@@ -5,3 +5,8 @@ a {
 [class*="span"] {
 	min-height: 1px;
 }
+
+section form {
+
+  margin-top: 20px;
+}
