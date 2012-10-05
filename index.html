@@ -1,6 +1,6 @@
 ---
 layout: default
-title: The PDT Extension Group eclipse p2-repository mirror
+title: The PDT Extension Group Eclipse p2-repository mirror
 description: 
 ---
 
@@ -11,10 +11,47 @@ description:
     </div>
 </header>
 
-<div class="container">
-	<div class="hero-unit">
-		<p>The PDT Extension Group p2 repository. Add this URL to your eclipse updatesite mechanism and choose from the features below.</p>
-	    <a id="p2url" href="http://p2-dev.pdt-extensions.org/">http://p2-dev.pdt-extensions.org/</a>
-		<p>Want to add your feature or know a feature which should be added? Create an issue on <a target="_blank" href="https://github.com/pdt-eg/p2-mirror/issues">github</a> and we'll add it to the repository.</p>
-	</div>
+<div class="container home">
+
+    <div class="alert snapshotwarning">
+        <strong>Warning!</strong> This updatesite hosts SNAPSHOT versions. The stable updatesite is not yet released.
+    </div>
+    
+    <div class="connection  span4 first">
+        <div class="span4 connectionHeader">
+            <h2>About</h2>
+        </div>
+        <div class="connectionBody">
+            <p>The PDT Extension group is a collaboration of various <a target="_blank" href="https://github.com/pdt-eg?tab=members">PDT extenders</a> to provide a central platform for Eclipse PHP developers.
+            <br/><br/>The <a href="/phpfeatures.html#pex-core">PHP Extensions Core feature</a> is the first step to provide common PDT additions in a single plugin.</p>
+            
+            <p>Watch our github repo to stay up to date</p>
+		    <div class="github">
+		        <iframe src="http://ghbtns.com/github-btn.html?user=pdt-eg&repo=Core-Plugin&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+		    </div>
+        </div>
+    </div>
+    
+    <div class="connection  span4">
+        <div class="span4 connectionHeader">
+            <h2>Installation</h2>
+        </div>
+        <div class="connectionBody">
+            <p>To install one of the features hosted in this repository, simply add this URL to your eclipse updatesite mechanism.</p>
+            <p>We suggest to use <a target="_blank" href="http://www.eclipse.org/downloads/">Eclipse Juno SR1 (4.2.1)</a>. Older versions of Eclipse might work but are not tested.</p>
+            <p>Some of the editors in this updatesite make use of the XText language development tools, so you need to add the <a href="http://www.eclipse.org/Xtext/download.html" target="_blank">Xtext updatesite</a> to your eclipse installation as well.</p>
+        </div>
+    </div>
+
+    <div class="connection  span4">
+        <div class="span4 connectionHeader">
+            <h2>Contribute</h2>
+        </div>
+        <div class="connectionBody">
+                <p>If you want to add your feature to this updatesite or know a feature which should be added, simply fork the project on <a target="_blank" href="https://github.com/pdt-eg/p2-mirror-dev">github</a> or create an <a target="_blank" href="https://github.com/pdt-eg/p2-mirror-dev/issues">issue</a> to integrate a feature.</p>
+                <p>If you're interested in contributing to the PDT Extensions Core Feature, join our <a href="https://groups.google.com/forum/?fromgroups#!forum/pdt-extensions-platform" target="_blank">mailing list</a> or hop in to the #pdt IRC channel on freenode.</p>
+                <p>The <a target="_blank" href="http://wiki.eclipse.org/index.php/PDT">Wiki</a> should get you started.</p>
+        </div>
+    </div>
+    
 </div>
