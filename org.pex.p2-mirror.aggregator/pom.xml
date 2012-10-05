@@ -154,6 +154,20 @@
 							<layout>p2</layout>
 						</repository>
 
+						<!-- NOT YET CHECKED FOR AGREEMENT -->
+						<!-- vrapper (vim wrapper) -->
+						<repository>
+							<url>http://vrapper.sourceforge.net/update-site/unstable</url>
+							<layout>p2</layout>
+						</repository>
+
+
+						<!-- NOT YET CHECKED FOR AGREEMENT -->
+						<!-- JSHint integration -->
+						<repository>
+							<url>http://github.eclipsesource.com/jshint-eclipse/updates/</url>
+							<layout>p2</layout>
+						</repository>
 						
 					</source>
 

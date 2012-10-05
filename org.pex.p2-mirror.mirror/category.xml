@@ -132,6 +132,21 @@
       <category name="editors"/>
    </feature>
 
+
+   <feature id="thinktank.markdown.feature" version="0.0.0">
+      <category name="editors"/>
+   </feature>
+
+   <!-- vim support -->
+   <feature id="net.sourceforge.vrapper" version="0.0.0">
+      <category name="editors"/>
+   </feature>
+
+   <!-- vim support (surround with)-->
+   <feature id="net.sourceforge.vrapper.plugin.surround" version="0.0.0">
+      <category name="editors"/>
+   </feature>
+
    <category-def name="frameworks" label="Frameworks / Content Management">
       <description>
          Support for various frameworks and CMS
