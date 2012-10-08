@@ -98,6 +98,19 @@
       <category name="libraries"/>
    </feature>
 
+   <feature id="com.eclipsesource.jshint.feature" version="0.0.0">
+      <category name="editors"/>
+   </feature>
+
+   <feature id="net.sourceforge.vrapper" version="0.0.0">
+      <category name="editors"/>
+   </feature>
+
+   <feature id="net.sourceforge.vrapper.plugin.surround" version="0.0.0">
+      <category name="editors"/>
+   </feature>
+   
+
    <!-- coffeescript feature -->
    <feature id="csep.feature" version="0.0.0">
       <category name="editors"/>
