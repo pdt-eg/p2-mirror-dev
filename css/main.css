@@ -38,9 +38,7 @@ div.connectionBody {
 
 
 .snapshotwarning {
-	margin-top: 45px;
-    margin-left: auto;
-    margin-right: auto;
+  margin: 20px auto 0;
 }
 
 .connection h2 {
