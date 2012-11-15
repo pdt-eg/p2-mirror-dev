@@ -160,6 +160,16 @@
       <category name="editors"/>
    </feature>
 
+   <!-- ReST support -->
+   <feature id="org.psem2m.eclipse.rest.editor" version="0.0.0">
+      <category name="editors"/>
+   </feature>
+
+   <!-- ReST support for Color Theme -->
+   <feature id="org.isandlatech.theme.mapper" version="0.0.0">
+      <category name="editors"/>
+   </feature>
+
    <category-def name="frameworks" label="Frameworks / Content Management">
       <description>
          Support for various frameworks and CMS
