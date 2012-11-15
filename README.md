@@ -3,8 +3,8 @@ PDT Extension Group P2 mirror (Development Snapshot)
 
 [![Build Status](https://secure.travis-ci.org/pdt-eg/p2-mirror-dev.png)](http://travis-ci.org/pdt-eg/p2-mirror-dev)
 
-A mirror for various p2 repositories a.k.a eclipse updatesites to provide a centralized repository for 
-all your PDT needs. 
+A mirror for various p2 repositories a.k.a eclipse updatesites to provide a centralized repository for
+all your PDT needs.
 
 __WARNING__: This repository hosts development snapshots of each updatesite if it's available.
 The stable mirror has not been released yet.
@@ -19,7 +19,7 @@ If you want to add your updatesite to the mirror follow these steps:
 
 1. Fork the repo
 2. Add your repository URL to the `<repositories>` node in `org.pex.p2-mirror.aggregator/pom.xml`
-3. Add your feature(s) to a corresponding category by adding a `<feature>` node to `org.pex.p2-mirror.mirror/pom.xml`
+3. Add your feature(s) to a corresponding category by adding a `<feature>` node to `org.pex.p2-mirror.mirror/category.xml`
 4. Send us a pull request
 
 

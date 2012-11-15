@@ -4,9 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<parent>
-	  <groupId>org.pex.p2-mirror</groupId>
-	  <artifactId>main</artifactId>
-	  <version>0.0.1</version>	
+		<groupId>org.pex.p2-mirror</groupId>
+		<artifactId>main</artifactId>
+		<version>0.0.1</version>
 	</parent>
 	
 	<groupId>org.pex.p2-mirror</groupId>
@@ -37,11 +37,11 @@
 					</execution>
 				</executions>
 				<configuration>
-				
-					<!-- source repositories to mirror from -->					
+
+					<!-- source repositories to mirror from -->
 					<source>
-					
-						<!-- Symfony, Twig, Composer, Doctrine etc -->					
+
+						<!-- Symfony, Twig, Composer, Doctrine etc -->
 						<!-- dev build -->
 						<repository>
 							<url>http://pulse00.github.com/p2-nightly/</url>
@@ -54,7 +54,7 @@
 							<url>http://emmet.io/eclipse/updates/</url>
 							<layout>p2</layout>
 						</repository>
-						
+
 						<!-- Yii -->
 						<repository>
 							<url>http://yiiclipse.maziarz.org/updatesite/DEV/</url>
@@ -67,46 +67,44 @@
 							<url>http://logviewer.eclipselabs.org.codespot.com/git/de.anbos.eclipse.logviewer.update/</url>
 							<layout>p2</layout>
 						</repository>
-						
-						
+
 						<!-- NOT YET CHECKED FOR AGREEMENT -->
 						<!-- seems unmaintaned, upgraded to juno and created a fork on github: https://github.com/pulse00/apdt -->
 						<repository>
 							<url>http://apdt.googlecode.com/svn/trunk/org.phpaspect.apdt.updatesite/</url>
 							<layout>p2</layout>
 						</repository>
-						
+
 						<!-- PTI -->
 						<repository>
 							<url>http://www.phpsrc.org/eclipse/pti/</url>
 							<layout>p2</layout>
 						</repository>
-						
+
 						<!-- NOT YET CHECKED FOR AGREEMENT -->
 						<repository>
 							<url>http://magento-plugin.googlecode.com/svn/update_site</url>
 							<layout>p2</layout>
 						</repository>
-						
+
 						<!-- NOT YET CHECKED FOR AGREEMENT -->
 						<!-- Drupal plugin -->
 						<repository>
 							<url>http://xtnd.us/downloads/eclipse</url>
 							<layout>p2</layout>
 						</repository>
-						
+
 						<!-- php-maven -->
 						<repository>
 							<url>http://www.php-maven.org/eclipse/update</url>
 							<layout>p2</layout>
 						</repository>
-						
+
 						<!-- MakeGood plugin -->
 						<repository>
 							<url>http://eclipse.piece-framework.com</url>
 							<layout>p2</layout>
 						</repository>
-
 
 						<!-- NOT YET CHECKED FOR AGREEMENT -->
 						<!-- coffeescript editor -->
@@ -114,7 +112,6 @@
 							<url>http://coffeescript-editor.eclipselabs.org.codespot.com/hg/</url>
 							<layout>p2</layout>
 						</repository>
-
 
 						<!-- NOT YET CHECKED FOR AGREEMENT -->
 						<!-- logviewer -->
@@ -128,16 +125,14 @@
 						<repository>
 							<url>http://svn.codespot.com/a/eclipselabs.org/jsdt-jquery/updatesite</url>
 							<layout>p2</layout>
-						</repository>			
-
+						</repository>
 
 						<!-- NOT YET CHECKED FOR AGREEMENT -->
 						<!-- eclipse color themes -->
 						<repository>
 							<url>http://eclipse-color-theme.github.com/update/</url>
 							<layout>p2</layout>
-						</repository>			
-						
+						</repository>
 
 						<!-- NOT YET CHECKED FOR AGREEMENT -->
 						<!-- markdown plugin -->
@@ -145,7 +140,6 @@
 							<url>http://winterstein.me.uk/projects/tt-update-site/</url>
 							<layout>p2</layout>
 						</repository>
-
 
 						<!-- NOT YET CHECKED FOR AGREEMENT -->
 						<!-- less plugin -->
@@ -161,22 +155,28 @@
 							<layout>p2</layout>
 						</repository>
 
-
 						<!-- NOT YET CHECKED FOR AGREEMENT -->
 						<!-- JSHint integration -->
 						<repository>
 							<url>http://github.eclipsesource.com/jshint-eclipse/updates/</url>
 							<layout>p2</layout>
 						</repository>
-						
+
+						<!-- NOT YET CHECKED FOR AGREEMENT -->
+						<!-- ReST Editor integration -->
+						<repository>
+							<url>http://resteditor.sourceforge.net/eclipse</url>
+							<layout>p2</layout>
+						</repository>
+
 					</source>
 
 					<!-- The destination directory to mirror to. -->
 					<destination>${project.build.directory}/mirror</destination>
-					
+
 					<!-- If we don't set this to true, build fails for certain repos due to missing older .jars -->
 					<latestVersionOnly>true</latestVersionOnly>
-					
+
 				</configuration>
 			</plugin>
 		</plugins>
