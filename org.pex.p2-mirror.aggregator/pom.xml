@@ -168,7 +168,13 @@
 							<url>http://resteditor.sourceforge.net/eclipse</url>
 							<layout>p2</layout>
 						</repository>
-
+						
+						<!-- shell editor -->
+						<repository>
+							<url>https://downloads.sourceforge.net/project/shelled/shelled/ShellEd%202.0.2/update</url>
+							<layout>p2</layout>
+						</repository>
+						
 					</source>
 
 					<!-- The destination directory to mirror to. -->

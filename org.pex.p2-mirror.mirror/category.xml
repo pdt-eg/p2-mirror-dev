@@ -170,6 +170,11 @@
       <category name="editors"/>
    </feature>
 
+   <!-- shell editor -->
+   <feature id="net.sourceforge.shelled" version="0.0.0">
+      <category name="editors"/>
+   </feature>
+
    <category-def name="frameworks" label="Frameworks / Content Management">
       <description>
          Support for various frameworks and CMS
