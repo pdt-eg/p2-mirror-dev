@@ -2,13 +2,13 @@
 <project>
 
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<parent>
 		<groupId>org.pex.p2-mirror</groupId>
 		<artifactId>main</artifactId>
 		<version>0.0.1</version>
 	</parent>
-	
+
 	<groupId>org.pex.p2-mirror</groupId>
 	<artifactId>aggregator</artifactId>
 	<version>0.0.1</version>
@@ -168,13 +168,19 @@
 							<url>http://resteditor.sourceforge.net/eclipse</url>
 							<layout>p2</layout>
 						</repository>
-						
+
 						<!-- shell editor -->
 						<repository>
 							<url>https://downloads.sourceforge.net/project/shelled/shelled/ShellEd%202.0.2/update</url>
 							<layout>p2</layout>
 						</repository>
-						
+
+						<!-- Cucumber -->
+						<repository>
+							<url>http://cucumber.github.com/cucumber-eclipse/update-site</url>
+							<layout>p2</layout>
+						</repository>
+
 					</source>
 
 					<!-- The destination directory to mirror to. -->
