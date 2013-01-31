@@ -4,27 +4,27 @@
    <feature id="org.pdtextensions.feature" version="0.0.0">
       <category name="pexcore"/>
    </feature>
-      
+
    <feature id="com.dubture.indexing.feature" version="0.0.0">
       <category name="misc"/>
    </feature>
-   
+
    <feature id="com.dubture.doctrine.feature" version="0.0.0">
       <category name="libraries"/>
    </feature>
-   
+
    <feature id="com.dubture.symfony.feature" version="0.0.0">
       <category name="frameworks"/>
    </feature>
-   
+
    <feature id="com.dubture.twig.feature" version="0.0.0">
       <category name="editors"/>
    </feature>
-   
+
    <feature id="org.eclipse.php.smarty_feature" version="0.0.0">
       <category name="editors"/>
    </feature>
-   
+
    <feature id="org.dadacoalition.yedit.feature" version="0.0.0">
       <category name="editors"/>
    </feature>
@@ -32,7 +32,7 @@
    <feature id="org.eclipselabs.jsdt.jquery_feature" version="0.0.0">
       <category name="editors"/>
    </feature>
-   
+
    <feature id="org.sourceforge.jsonedit.feature" version="0.0.0">
       <category name="editors"/>
    </feature>
@@ -40,60 +40,60 @@
    <!-- zen coding feature -->
    <feature id="io.emmet.eclipse" version="0.0.0">
       <category name="editors"/>
-   </feature>   
-   
+   </feature>
+
    <feature id="org.ganoro.phing.feature" version="0.0.0">
       <category name="toolchains"/>
    </feature>
-   
+
    <feature id="com.dubture.composer.feature" version="0.0.0">
       <category name="toolchains"/>
    </feature>
-   
+
    <feature id="org.eclipse.magento" version="0.0.0">
       <category name="ecommerce"/>
    </feature>
-   
+
    <feature id="org.maziarz.yiiclipse.feature" version="0.0.0">
       <category name="frameworks"/>
    </feature>
-   
+
    <feature id="Drupal_for_Eclipse_PDT" version="0.0.0">
       <category name="frameworks"/>
    </feature>
-   
+
    <feature id="org.phpmaven.eclipse.feature" version="0.0.0">
       <category name="toolchains"/>
    </feature>
-   
+
    <feature id="org.phpaspect.apdt.feature" version="0.0.0">
       <category name="tools"/>
    </feature>
-   
+
    <feature id="org.phpsrc.eclipse.pti.core" version="0.0.0">
       <category name="tools"/>
    </feature>
-   
+
    <feature id="org.phpsrc.eclipse.pti.tools.codesniffer" version="0.0.0">
       <category name="tools"/>
    </feature>
-   
+
    <feature id="org.phpsrc.eclipse.pti.tools.phpcpd" version="0.0.0">
       <category name="tools"/>
    </feature>
-   
+
    <feature id="org.phpsrc.eclipse.pti.tools.phpmd" version="0.0.0">
       <category name="tools"/>
    </feature>
-   
+
    <feature id="org.phpsrc.eclipse.pti.tools.phpunit" version="0.0.0">
       <category name="tools"/>
    </feature>
-   
+
    <feature id="com.piece_framework.makegood_feature" version="0.0.0">
       <category name="tools"/>
    </feature>
-   
+
    <feature id="org.phpsrc.eclipse.pti.library.pear" version="0.0.0">
       <category name="libraries"/>
    </feature>
@@ -109,7 +109,7 @@
    <feature id="net.sourceforge.vrapper.plugin.surround" version="0.0.0">
       <category name="editors"/>
    </feature>
-   
+
 
    <!-- coffeescript feature -->
    <feature id="csep.feature" version="0.0.0">
@@ -134,13 +134,13 @@
    <!--IDE for the LESS stylesheet language (http://lesscss.org/) -->
    <feature id="net.vtst.ow.eclipse.less.feature" version="0.0.0">
       <category name="editors"/>
-   </feature>   
+   </feature>
 
    <!--Extension of JSDT to support Closure Compiler and Closure Library. -->
    <feature id="net.vtst.ow.eclipse.soy.feature" version="0.0.0">
       <category name="editors"/>
    </feature>
-   
+
    <feature id="thinktank.markdown.feature" version="0.0.0">
       <category name="editors"/>
    </feature>
@@ -172,6 +172,11 @@
 
    <!-- shell editor -->
    <feature id="net.sourceforge.shelled" version="0.0.0">
+      <category name="editors"/>
+   </feature>
+
+   <!-- Cucumber editor -->
+   <feature id="cucumber.eclipse.feature" version="0.0.0">
       <category name="editors"/>
    </feature>
 
