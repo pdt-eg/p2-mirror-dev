@@ -12,19 +12,10 @@
 	<url>https://github.com/pdt-eg/p2-mirror-dev</url>
 
 	<modules>
-		<!-- 1. Compile the in-house features -->
-		<module>../Json-Eclipse-Plugin</module>
-		<module>../PEX-Core</module>
-		<module>../Composer-Eclipse-Plugin</module>
-		<module>../Twig-Eclipse-Plugin</module>
-		<module>../Doctrine-Eclipse-Plugin</module>
-		<module>../eclipse-indexing-framework</module>
-		<module>../Symfony-2-Eclipse-Plugin</module>
-
-		<!-- 2. Create a local repo containing the in-house features -->
+		<!-- 1. Create a local repo containing the in-house features -->
 		<module>org.pex.p2-mirror.repo</module>
 
-		<!-- 3. Aggregate 3rd party features -->
+		<!-- 2. Aggregate 3rd party features -->
 		<module>org.pex.p2-mirror.aggregator</module>
 
 	</modules>
@@ -49,7 +40,7 @@
 		<profile>
 			<id>packageRepo</id>
 			<modules>
-				<!-- 4. Mirror everything into a common repo -->
+				<!-- 3. Mirror everything into a common repo -->
 				<module>org.pex.p2-mirror.mirror</module>
 			</modules>
 		</profile>
