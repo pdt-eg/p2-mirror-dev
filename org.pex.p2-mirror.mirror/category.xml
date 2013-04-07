@@ -2,7 +2,7 @@
 <site>
 
    <feature id="org.sourceforge.jsonedit.feature" version="0.0.0">
-      <category name="pexcore"/>
+      <category name="editors"/>
    </feature>
    
    <feature id="org.pdtextensions.feature" version="0.0.0">
@@ -10,23 +10,23 @@
    </feature>
    
    <feature id="com.dubture.composer.feature" version="0.0.0">
-      <category name="pexcore"/>
+      <category name="toolchains"/>
    </feature>
    
    <feature id="com.dubture.twig.feature" version="0.0.0">
-      <category name="pexcore"/>
+      <category name="editors"/>
    </feature>
    
    <feature id="com.dubture.doctrine.feature" version="0.0.0">
-      <category name="pexcore"/>
+      <category name="libraries"/>
    </feature>
    
    <feature id="com.dubture.indexing.feature" version="0.0.0">
-      <category name="pexcore"/>
+      <category name="misc"/>
    </feature>
    
    <feature id="com.dubture.symfony.feature" version="0.0.0">
-      <category name="pexcore"/>
+      <category name="frameworks"/>
    </feature>
 
    <feature id="org.eclipse.php.smarty_feature" version="0.0.0">
