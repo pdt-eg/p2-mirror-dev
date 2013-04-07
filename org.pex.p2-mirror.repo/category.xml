@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="org.sourceforge.jsonedit.feature" version="0.0.0">
+      <category name="PEX"/>
+   </feature>
+   
+   <feature id="org.pdtextensions.feature" version="0.0.0">
+      <category name="PEX"/>
+   </feature>
+   
+   <feature id="com.dubture.composer.feature" version="0.0.0">
+      <category name="PEX"/>
+   </feature>
+   
+   <feature id="com.dubture.twig.feature" version="0.0.0">
+      <category name="PEX"/>
+   </feature>
+   
+   <feature id="com.dubture.doctrine.feature" version="0.0.0">
+      <category name="PEX"/>
+   </feature>
+   
+   <feature id="com.dubture.indexing.feature" version="0.0.0">
+      <category name="PEX"/>
+   </feature>
+   
+   <feature id="com.dubture.symfony.feature" version="0.0.0">
+      <category name="PEX"/>
+   </feature>
+  <category-def name="PEX" label="PDT Extension Group">
+      <description>
+         PDT Extension Group
+      </description>
+   </category-def>
+</site>

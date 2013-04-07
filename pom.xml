@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.pex.p2-mirror</groupId>
+	<artifactId>main</artifactId>
+	<version>0.0.1</version>
+	<packaging>pom</packaging>
+
+	<url>https://github.com/pdt-eg/p2-mirror-dev</url>
+
+	<modules>
+		<!-- 1. Compile the in-house features -->
+		<module>../Json-Eclipse-Plugin</module>
+		<module>../PEX-Core</module>
+		<module>../Composer-Eclipse-Plugin</module>
+		<module>../Twig-Eclipse-Plugin</module>
+		<module>../Doctrine-Eclipse-Plugin</module>
+		<module>../eclipse-indexing-framework</module>
+		<module>../Symfony-2-Eclipse-Plugin</module>
+
+		<!-- 2. Create a local repo containing the in-house features -->
+		<module>org.pex.p2-mirror.repo</module>
+
+		<!-- 3. Aggregate 3rd party features -->
+		<module>org.pex.p2-mirror.aggregator</module>
+
+	</modules>
+
+	<properties>
+		<tycho-version>0.17.0</tycho-version>
+		<composer-version>0.0.3-SNAPSHOT</composer-version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.dubture</groupId>
+			<artifactId>composer-java-api</artifactId>
+			<version>${composer-version}</version>
+		</dependency>
+	</dependencies>
+
+	<!-- Currently the build needs 2 passed due to https://bugs.eclipse.org/bugs/show_bug.cgi?id=353889 -->
+	<!-- Otherwise the first build will fail due to the non-existent aggregated 
+		local repository -->
+	<profiles>
+		<profile>
+			<id>packageRepo</id>
+			<modules>
+				<!-- 4. Mirror everything into a common repo -->
+				<module>org.pex.p2-mirror.mirror</module>
+			</modules>
+		</profile>
+	</profiles>
+
+	<repositories>
+    	<repository>
+		      <id>dubture-osgi</id>
+		      <layout>p2</layout>
+		      <url>http://dzwiupza59who.cloudfront.net/repository</url>
+        </repository>
+
+		<repository>
+			<id>pdt-nightly</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/tools/pdt/updates/3.2-nightly/</url>
+		</repository>
+
+		<repository>
+			<id>dltk</id>
+			<layout>p2</layout>
+			<url>https://hudson.eclipse.org/hudson/job/dltk-nightly/lastSuccessfulBuild/artifact/org.eclipse.dltk.releng/build/update.site/target/site/</url>
+		</repository>
+
+		<repository>
+			<id>juno</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/releases/juno</url>
+		</repository>
+
+		<repository>
+			<id>orbit</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/tools/orbit/downloads/drops/S20130308121626/repository/</url>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<pomDependencies>consider</pomDependencies>
+					<environments>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.14</version>
+				<configuration>
+					<argLine>-Xmx1024m</argLine>
+				</configuration>
+			</plugin>
+
+			<!-- clean the repo otherwise the old .jars pile up -->
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>2.4.1</version>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory>${project.basedir}/../../p2-mirror-dev-repo/plugins</directory>
+							<includes>
+								<include>*.jar</include>
+							</includes>
+						</fileset>
+						<fileset>
+							<directory>${project.basedir}/../../p2-mirror-dev-repo/features</directory>
+							<includes>
+								<include>*.jar</include>
+							</includes>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.pex.p2-mirror</groupId>
+		<artifactId>main</artifactId>
+		<version>0.0.1</version>
+	</parent>
+
+	<artifactId>aggregator</artifactId>
+	<packaging>pom</packaging>
+
+	<repositories>
+		<repository>
+			<id>juno</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/releases/juno</url>
+		</repository>
+
+       <repository>
+            <id>pdt-nightly</id>
+            <layout>p2</layout>
+            <url>http://download.eclipse.org/tools/pdt/updates/3.2-nightly/</url>
+        </repository>
+
+       <repository>
+            <id>dltk</id>
+            <layout>p2</layout>
+            <url>https://hudson.eclipse.org/hudson/job/dltk-nightly/lastSuccessfulBuild/artifact/org.eclipse.dltk.releng/build/update.site/target/site/</url>
+        </repository>
+
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>tycho-p2-extras-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>mirror</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+
+					<!-- source repositories to mirror from -->
+					<source>
+
+
+						<repository>
+							<url>http://emmet.io/eclipse/updates/</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://yiiclipse.maziarz.org/updatesite/DEV/</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://logviewer.eclipselabs.org.codespot.com/git/de.anbos.eclipse.logviewer.update/</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://apdt.googlecode.com/svn/trunk/org.phpaspect.apdt.updatesite/</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://www.phpsrc.org/eclipse/pti/</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://magento-plugin.googlecode.com/svn/update_site</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://xtnd.us/downloads/eclipse</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://www.php-maven.org/eclipse/update</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://eclipse.piece-framework.com</url>
+							<layout>p2</layout>
+						</repository>
+						
+						<repository>
+							<url>http://coffeescript-editor.eclipselabs.org.codespot.com/hg/</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://logviewer.eclipselabs.org.codespot.com/git/de.anbos.eclipse.logviewer.update/</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://svn.codespot.com/a/eclipselabs.org/jsdt-jquery/updatesite</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://eclipse-color-theme.github.com/update/</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://winterstein.me.uk/projects/tt-update-site/</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://www.normalesup.org/~simonet/soft/ow/update/</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://vrapper.sourceforge.net/update-site/unstable</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://github.eclipsesource.com/jshint-eclipse/updates/</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://resteditor.sourceforge.net/eclipse</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>https://downloads.sourceforge.net/project/shelled/shelled/ShellEd%202.0.2/update</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://cucumber.github.com/cucumber-eclipse/update-site</url>
+							<layout>p2</layout>
+						</repository>
+
+						<repository>
+							<url>http://dadacoalition.org/yedit</url>
+							<layout>p2</layout>
+						</repository>
+						
+					</source>
+
+					<!-- The destination directory to mirror to. -->
+					<destination>${project.build.directory}/mirror</destination>
+
+					<!-- If we don't set this to true, build fails for certain repos due to missing older .jars -->
+					<latestVersionOnly>true</latestVersionOnly>
+
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
