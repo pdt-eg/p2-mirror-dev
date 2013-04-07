@@ -1,0 +1,12 @@
+navigation:
+- text: Home
+  url: /index.html
+- text: PHP Features
+  url: /phpfeatures.html
+- text: Frameworks / Tools
+  url: /frameworks.html
+- text: Editors
+  url: /editors.html
+- text: Miscellaneous
+  url: /misc.html
+  

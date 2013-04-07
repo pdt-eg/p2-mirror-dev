@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>PHP features | The PDT Extension Group eclipse p2 repository</title>
+<meta name="description" content="PHP eclipse frameworks features. Provides support for Symfony2, Composer, Phing, Yii, Drupal, magento and others. ">
+<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="css/docs.css">
+<link rel="stylesheet" href="css/main.css">
+
+<script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+</head>
+<body data-target=".bs-docs-sidebar" data-spy="scroll">
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-39387985-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+    <!-- 
+	<a href="https://github.com/pdt-eg/p2-mirror"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 999999;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+	 -->
+	<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a target="_blank" href="http://browsehappy.com/">Upgrade your browser today</a> or <a target="_blank" href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+      <![endif]-->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></a>
+				<a class="brand" target="_blank" href="http://github.com/pdt-eg">PDT Extension Group</a>
+				<div class="nav-collapse collapse">
+				
+                    <ul class="nav">
+                    
+                        
+                        
+                        <li class="first  ">
+                            <a class="" href="/index.html">Home</a>
+                        </li>
+                    
+                        
+                        
+                        <li class="  ">
+                            <a class="" href="/phpfeatures.html">PHP Features</a>
+                        </li>
+                    
+                        
+                        
+                            
+                        
+                        <li class=" active ">
+                            <a class="active" href="/frameworks.html">Frameworks / Tools</a>
+                        </li>
+                    
+                        
+                        
+                        <li class="  ">
+                            <a class="" href="/editors.html">Editors</a>
+                        </li>
+                    
+                        
+                        
+                        <li class="  last">
+                            <a class="" href="/misc.html">Miscellaneous</a>
+                        </li>
+                    
+                    </ul>
+                
+				</div>
+			</div>
+		</div>
+	</div>
+	<header class="jumbotron subhead">
+    <div class="container">
+        <h1>Framework support</h1>
+        <p>Integrate your favorite framework and toolset in PDT.</p>
+    </div>
+</header>
+
+<div class="container">
+
+	<div class="row">
+		<div class="span3 bs-docs-sidebar">
+		    <ul class="nav nav-list bs-docs-sidenav affix" data-spy="affix" data-offset-top="200">
+					<li><a href="#symfony"><i class="icon-chevron-right"></i>Symfony</a></li>
+					<li><a href="#composer"><i class="icon-chevron-right"></i>Composer</a></li>					
+					<li><a href="#phing"><i class="icon-chevron-right"></i>Phing</a></li>
+					<li><a href="#yii"><i class="icon-chevron-right"></i>Yii</a></li>
+					<li><a href="#drupal"><i class="icon-chevron-right"></i>Drupal</a></li>
+					<li><a href="#magento"><i class="icon-chevron-right"></i>Magento</a></li>
+					<li><a href="#aspectphp"><i class="icon-chevron-right"></i>Aspect PHP</a></li>
+				</ul>		    
+		</div>
+
+		<div class="span9">
+
+		<section id="symfony" class="">
+	      <div class="page-header">
+	          <h1>Symfony</h1>
+	      </div>
+				<p>An Eclipse plugin for Symfony and the Symfony components . Features include:
+				</p>
+				<ul>
+					<li>Codeassist for Symfony specific elements, like services, routes, template paths, entities, translations and twig blocks.</li>
+			    <li>Navigation: Hyperlinking of routes, templates, twig blocks/functions/filters and services</li>
+			    <li>Annotation support</li>
+			    <li>Twig support</li>
+				</ul>
+
+        <img alt="eclipse symfony route support" src="/images/symfony/route_proposal.png" class="img-rounded">
+        <img alt="eclipse symfony service support" src="/images/symfony/service_proposal.gif" class="img-rounded">
+
+
+        <form action="http://symfony.dubture.com/">
+            <input type="submit" value="Visit website" class="btn btn-primary">
+        </form>				
+		</section>
+
+			<section id="composer" class="">
+	      <div class="page-header">
+	          <h1>Composer</h1>
+	      		<p>Integrates the php dependency manager composer directly into PDT, enabling you to </p>    
+	      </div>				
+				<ul>
+					<li>Initialize a new composer.json file</li>
+			    <li>Search packagist.org for packages and install them in your project</li>
+			    <li>Install/Update dependencies</li>
+			    <li>Visualize your dependencies via a dependency graph</li>
+				</ul>
+
+        <img alt="eclipse pdt composer initialize comopser.json" src="/images/composer/composer_initialize.jpg" class="img-rounded">
+        <img alt="eclipse pdt composer require dependency" src="/images/composer/composer_require.jpg" class="img-rounded">
+        <img alt="eclipse pdt composer require dependency" src="/images/composer/composer_require1.jpg" class="img-rounded">
+
+        <form action="https://github.com/pulse00/Composer-Eclipse-Plugin">
+            <input type="submit" value="Visit website" class="btn btn-primary">
+        </form>
+
+			</section>			
+
+			<section id="phing" class="">
+	      <div class="page-header">
+	          <h1>Phing</h1>
+	      </div>
+				<p>Eclipse support to edit and run phing build scripts.</p>
+				<img alt="eclipse pdt composer require dependency" src="/images/phing/phin.jpg" class="img-rounded">
+        <form action="https://github.com/ganoro/phing-eclipse">
+            <input type="submit" value="Visit website" class="btn btn-primary">
+        </form>
+			</section>			
+
+			<section id="yii" class="">
+	      <div class="page-header">
+	          <h1>Yii</h1>
+	      </div>
+				<p>Yiiclipse integrates the Yii Framework into PDT. Install it to get the following features:</p>
+				<ul>
+					<li>New Yii Application Wizard</li>
+			    <li>Navigation</li>
+			    <li>Code Completion
+			    	<ul>
+			    		<li>Yii::app()->[CWebApplication] type inference.</li>
+			    		<li>View $this (CController) type inference</li>
+			    		<li>$this->widget alias completion</li>
+			    		<li>Yii::import alias completion</li>
+			    	</ul>
+			    </li>
+				</ul>
+				<img alt="eclipse yii project wizard" src="/images/yii/yiiwizard.jpg" class="img-rounded">
+				<img alt="eclipse yii code assist" src="/images/yii/yiitypeinference.jpg" class="img-rounded">
+        <form action="http://yiiclipse.maziarz.org/intro/">
+            <input type="submit" value="Visit website" class="btn btn-primary">
+        </form>
+
+			</section>
+
+			<section id="drupal" class="">
+	      <div class="page-header">
+	          <h1>Drupal</h1>
+	      </div>
+				<p>Provides support for the following Drupal files types:</p>
+
+				<ul>
+					<li>*.module</li>
+					<li>*.install</li>
+					<li>*.test</li>
+					<li>*.info</li>
+					<li>*.theme</li>
+					<li>*.engine</li>
+				</ul>
+        <form action="http://groups.drupal.org/node/39938">
+            <input type="submit" value="Visit website" class="btn btn-primary">
+        </form>
+				<img alt="eclipse drupal support" src="/images/drupal/eclipse_content_types_drupal_module.png" class="img-rounded">
+
+			</section>
+
+			<section id="magento" class="">
+	      <div class="page-header">
+	          <h1>Magento</h1>
+	          <p>The Magento Eclipse Plugin provides support of Magento projects for Eclipse based IDE’s: handle Magento instantiate of models, singletons and others by adding code completion to these methods; wizards that help to create initial module structure or extend native Magento module.</p>
+	      </div>
+				<p></p>
+        <form action="http://code.google.com/p/magento-plugin/">
+            <input type="submit" value="Visit website" class="btn btn-primary">
+        </form>
+        <img alt="eclipse drupal support" src="/images/magento/Code_Assist_for_Magento_Expression_2_original.png" class="img-rounded">
+
+			</section>
+		
+            <section id="aspectphp" class="">
+                <div class="page-header">
+                    <h1>Aspect PHP Developement Tools</h1>
+                    <p>The Aspect PHP Development Tools (APDT) project provides Eclipse platform based tool support for AOSD with PHP.</p>
+                </div>
+                <img alt="pdt aspect php development tools" src="/images/apdt/example.png" class="img-rounded">
+
+                <form action="http://code.google.com/p/apdt/">
+                    <input type="submit" value="Visit website" class="btn btn-primary">
+                </form>             
+            </section>
+			
+			
+		</div>	
+	</div>
+</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
