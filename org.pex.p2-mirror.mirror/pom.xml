@@ -27,12 +27,6 @@
 			<url>${project.baseUri}../org.pex.p2-mirror.aggregator/target/mirror</url>
 		</repository>
 
-		<repository>
-			<id>dubture</id>
-			<url>http://p2.dubture.com/</url>
-			<layout>p2</layout>
-		</repository>
-
 		<!-- coffeescript editor dependency -->
 		<repository>
 			<id>p2-nightly</id>
