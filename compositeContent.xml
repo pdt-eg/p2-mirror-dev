@@ -6,7 +6,7 @@
     <property name='p2.timestamp' value='1243822502499'/>
   </properties>
  <children size='3'>
-    <child location='http://p2-dev.pdt-extensions.org/dev'/>
+    <child location='http://dl.bintray.com/pulse00/pdt-extensions'/>
     <child location='http://download.eclipse.org/tools/pdt/updates/3.3-nightly'/>
     <child location='https://hudson.eclipse.org/hudson/job/dltk-nightly/lastSuccessfulBuild/artifact/org.eclipse.dltk.releng/build/update.site/target/site'/>
   </children>
