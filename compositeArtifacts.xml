@@ -3,7 +3,7 @@
 <repository name="PDT Extension Updates (dev)"
     type="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository" version="1.0.0">
   <properties size="1">
-    <property name="p2.timestamp" value="1243822502441"/>
+    <property name="p2.timestamp" value="1243822502442"/>
   </properties>
   <children size="3">
     <child location="http://dl.bintray.com/pulse00/pdt-extensions/nightly/0.0.3"/>
