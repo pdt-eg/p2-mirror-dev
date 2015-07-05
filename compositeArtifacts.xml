@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?compositeArtifactRepository version="1.0.0"?>
 <repository name="PDT Extension Updates (dev)"
-    type="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository" version="1.0.1">
+    type="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository" version="1.0.0">
   <properties size="1">
-    <property name="p2.timestamp" value="1243822503444"/>
+    <property name="p2.timestamp" value="1243822503445"/>
   </properties>
   <children size="3">
-    <child location="http://dl.bintray.com/pulse00/pdt-extensions/nightly/0.0.3"/>
-    <child location="http://download.eclipse.org/tools/pdt/updates/latest-nightly"/>
+    <child location="http://dl.bintray.com/pulse00/pdt-extensions/release/0.0.4/" />
+    <child location="http://download.eclipse.org/tools/pdt/updates/latest-nightly" />
     <child location="http://download.eclipse.org/technology/dltk/updates-dev/latest-nightly/" />
   </children>
 </repository>
