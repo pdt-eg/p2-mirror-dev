@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aggregator:Contribution xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2011/aggregator/1.1.0" label="Magento">
+  <repositories location="http://magento-plugin.googlecode.com/svn/update_site" description="Magento">
+    <features name="org.eclipse.magento.feature.group">
+      <categories href="mirror.b3aggr#//@customCategories[identifier='ecommerce']"/>
+    </features>
+  </repositories>
+</aggregator:Contribution>

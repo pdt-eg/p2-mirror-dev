@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aggregator:Contribution xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2011/aggregator/1.1.0" label="PTI">
+  <repositories location="http://www.phpsrc.org/eclipse/pti/" description="PTI">
+    <features name="org.phpsrc.eclipse.pti.core.feature.group">
+      <categories href="mirror.b3aggr#//@customCategories[identifier='tools']"/>
+    </features>
+    <features name="org.phpsrc.eclipse.pti.library.pear.feature.group">
+      <categories href="mirror.b3aggr#//@customCategories[identifier='libraries']"/>
+    </features>
+    <features name="org.phpsrc.eclipse.pti.tools.codesniffer.feature.group">
+      <categories href="mirror.b3aggr#//@customCategories[identifier='tools']"/>
+    </features>
+    <features name="org.phpsrc.eclipse.pti.tools.phpcpd.feature.group">
+      <categories href="mirror.b3aggr#//@customCategories[identifier='tools']"/>
+    </features>
+    <features name="org.phpsrc.eclipse.pti.tools.phpdepend.feature.group">
+      <categories href="mirror.b3aggr#//@customCategories[identifier='tools']"/>
+    </features>
+    <features name="org.phpsrc.eclipse.pti.tools.phpmd.feature.group">
+      <categories href="mirror.b3aggr#//@customCategories[identifier='tools']"/>
+    </features>
+    <features name="org.phpsrc.eclipse.pti.tools.phpunit.feature.group">
+      <categories href="mirror.b3aggr#//@customCategories[identifier='tools']"/>
+    </features>
+  </repositories>
+</aggregator:Contribution>

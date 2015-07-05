@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aggregator:Contribution xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2011/aggregator/1.1.0" label="Emmet">
+  <repositories location="http://emmet.io/eclipse/updates/" description="Emmet">
+    <features name="io.emmet.eclipse.feature.group">
+      <categories href="mirror.b3aggr#//@customCategories[identifier='text_editors']"/>
+    </features>
+  </repositories>
+</aggregator:Contribution>

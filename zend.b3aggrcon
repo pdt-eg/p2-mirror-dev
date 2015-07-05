@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aggregator:Contribution xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2011/aggregator/1.1.0" label="Zend SDK">
+  <repositories location="http://zend-sdk.googlecode.com/svn/trunk/eclipse-update/nightly" description="Zend SDK">
+    <features name="org.zend.php.zendserver.deployment.feature.group">
+      <categories href="mirror.b3aggr#//@customCategories[identifier='toolchains']"/>
+    </features>
+    <features name="org.zend.php.zendserver.deployment.debug.feature.group">
+      <categories href="mirror.b3aggr#//@customCategories[identifier='toolchains']"/>
+    </features>
+  </repositories>
+</aggregator:Contribution>
