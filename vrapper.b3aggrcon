@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aggregator:Contribution xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2011/aggregator/1.1.0" label="VRapper">
-  <!--http://vrapper.sourceforge.net/update-site/unstable-->
-  <repositories location="http://dl.bintray.com/pulse00/pdt-extensions/nightly/0.0.4" description="VRapper">
+  <repositories location="http://vrapper.sourceforge.net/update-site/stable" description="VRapper">
     <features name="net.sourceforge.vrapper.feature.group">
       <categories href="mirror.b3aggr#//@customCategories[identifier='text_editors']"/>
     </features>
