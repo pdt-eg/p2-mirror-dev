@@ -30,7 +30,6 @@
     <contributions href="darker_theme.b3aggrcon#/"/>
     <contributions href="cucumber.b3aggrcon#/"/>
     <contributions href="less.b3aggrcon#/"/>
-    <contributions href="shelled.b3aggrcon#/"/>
     <validationRepositories location="http://download.eclipse.org/releases/luna"/>
     <validationRepositories location="http://download.eclipse.org/releases/kepler"/>
     <validationRepositories location="http://download.eclipse.org/releases/juno"/>
@@ -82,7 +81,6 @@
     <features href="darker_theme.b3aggrcon#//@repositories.0/@features.0"/>
     <features href="cucumber.b3aggrcon#//@repositories.0/@features.0"/>
     <features href="less.b3aggrcon#//@repositories.0/@features.0"/>
-    <features href="shelled.b3aggrcon#//@repositories.0/@features.0"/>
   </customCategories>
   <customCategories identifier="toolchains" label="Toolchains">
     <features href="composer.b3aggrcon#//@repositories.0/@features.0"/>
