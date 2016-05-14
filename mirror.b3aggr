@@ -31,6 +31,7 @@
     <contributions href="cucumber.b3aggrcon#/"/>
     <contributions href="less.b3aggrcon#/"/>
     <validationRepositories location="http://download.eclipse.org/releases/mars"/>
+    <validationRepositories location="http://download.eclipse.org/eclipse/updates/4.5"/>
     <validationRepositories location="http://download.eclipse.org/technology/dltk/updates-dev/latest-nightly/"/>
     <validationRepositories location="http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/"/>
     <validationRepositories location="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
