@@ -8,9 +8,9 @@
 	<version>0.0.4</version>
 	<packaging>pom</packaging>
 	<properties>
-		<tycho-version>0.23.1</tycho-version>
+		<tycho-version>0.26.0</tycho-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<eclipse.name>mars</eclipse.name>
+		<eclipse.name>neon</eclipse.name>
 	</properties>
 	<repositories>
 		<repository>
