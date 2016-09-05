@@ -30,6 +30,7 @@
     <contributions href="darker_theme.b3aggrcon#/"/>
     <contributions href="cucumber.b3aggrcon#/"/>
     <contributions href="less.b3aggrcon#/"/>
+    <validationRepositories location="http://download.eclipse.org/releases/neon"/>
     <validationRepositories location="http://download.eclipse.org/releases/mars"/>
     <validationRepositories location="http://download.eclipse.org/eclipse/updates/4.5"/>
     <validationRepositories location="http://download.eclipse.org/technology/dltk/updates-dev/latest-nightly/"/>
