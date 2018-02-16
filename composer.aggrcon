@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aggregator:Contribution xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" label="Composer Plugin">
+  <repositories location="http://composer.dubture.com/nightly/" description="Composer">
+    <features name="com.dubture.composer.feature.feature.group">
+      <categories href="mirror.aggr#//@customCategories[identifier='toolchains']"/>
+    </features>
+  </repositories>
+</aggregator:Contribution>

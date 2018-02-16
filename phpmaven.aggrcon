@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aggregator:Contribution xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" enabled="false" label="PHP-Maven">
+  <repositories location="http://www.php-maven.org/eclipse/update" description="PHP-Maven">
+    <features name="org.phpmaven.eclipse.feature.feature.group">
+      <categories href="mirror.aggr#//@customCategories[identifier='toolchains']"/>
+    </features>
+  </repositories>
+</aggregator:Contribution>

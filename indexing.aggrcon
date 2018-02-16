@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aggregator:Contribution xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2011/aggregator/1.1.0" label="Indexing Plugin">
+<aggregator:Contribution xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" label="Indexing Plugin">
   <repositories location="http://pulse00.github.io/eclipse-indexing-framework/latest" description="Indexing">
     <features name="com.dubture.indexing.feature.feature.group">
-      <categories href="mirror.b3aggr#//@customCategories[identifier='miscellaneous']"/>
+      <categories href="mirror.aggr#//@customCategories[identifier='miscellaneous']"/>
     </features>
   </repositories>
 </aggregator:Contribution>

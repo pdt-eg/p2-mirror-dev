@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" label="PEX External Mirror Site" buildRoot="mirror" packedStrategy="UNPACK_AS_SIBLING" type="I">
+  <validationSets label="main">
+    <contributions href="pex.aggrcon#/"/>
+    <contributions href="symfony.aggrcon#/"/>
+    <contributions href="composer.aggrcon#/"/>
+    <contributions href="indexing.aggrcon#/"/>
+    <contributions href="doctrine.aggrcon#/"/>
+    <contributions href="twig.aggrcon#/"/>
+    <contributions href="extjs.aggrcon#/"/>
+    <contributions href="yedit.aggrcon#/"/>
+    <contributions href="jquery.aggrcon#/"/>
+    <contributions href="emmet.aggrcon#/"/>
+    <contributions href="magento.aggrcon#/"/>
+    <contributions href="yii.aggrcon#/"/>
+    <contributions href="drupal.aggrcon#/"/>
+    <contributions href="phpmaven.aggrcon#/"/>
+    <contributions href="phpaspect.aggrcon#/"/>
+    <contributions href="pti.aggrcon#/"/>
+    <contributions href="makegood.aggrcon#/"/>
+    <contributions href="jshint.aggrcon#/"/>
+    <contributions href="vrapper.aggrcon#/"/>
+    <contributions href="coffescript.aggrcon#/"/>
+    <contributions href="logviewer.aggrcon#/"/>
+    <contributions href="colortheme.aggrcon#/"/>
+    <contributions href="markdown.aggrcon#/"/>
+    <contributions href="rest.aggrcon#/"/>
+    <contributions href="zend.aggrcon#/"/>
+    <contributions href="ansicon.aggrcon#/"/>
+    <contributions href="darker_theme.aggrcon#/"/>
+    <contributions href="cucumber.aggrcon#/"/>
+    <contributions href="less.aggrcon#/"/>
+    <validationRepositories location="http://download.eclipse.org/releases/oxygen"/>
+    <validationRepositories location="http://download.eclipse.org/eclipse/updates/4.7"/>
+    <validationRepositories location="http://download.eclipse.org/technology/dltk/updates-dev/latest-nightly/"/>
+    <validationRepositories location="http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/"/>
+    <validationRepositories location="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
+    <validationRepositories location="http://download.eclipse.org/tools/pdt/updates/latest-nightly/"/>
+  </validationSets>
+  <configurations operatingSystem="linux" windowSystem="gtk"/>
+  <configurations operatingSystem="linux" windowSystem="gtk" architecture="x86_64"/>
+  <configurations operatingSystem="macosx" windowSystem="cocoa" architecture="x86_64"/>
+  <configurations architecture="x86_64"/>
+  <configurations/>
+  <customCategories identifier="ecommerce" label="Ecommerce">
+    <features href="magento.aggrcon#//@repositories.0/@features.0"/>
+  </customCategories>
+  <customCategories identifier="frameworks" label="Frameworks / Content Management">
+    <features href="symfony.aggrcon#//@repositories.0/@features.0"/>
+    <features href="yii.aggrcon#//@repositories.0/@features.0"/>
+  </customCategories>
+  <customCategories identifier="libraries" label="Libraries">
+    <features href="doctrine.aggrcon#//@repositories.0/@features.0"/>
+    <features href="pti.aggrcon#//@repositories.0/@features.1"/>
+  </customCategories>
+  <customCategories identifier="miscellaneous" label="Miscellaneous">
+    <features href="indexing.aggrcon#//@repositories.0/@features.0"/>
+    <features href="logviewer.aggrcon#//@repositories.0/@features.0"/>
+    <features href="ansicon.aggrcon#//@repositories.0/@features.0"/>
+  </customCategories>
+  <customCategories identifier="pdt_extensions" label="PDT Extensions">
+    <features href="pex.aggrcon#//@repositories.1/@features.0"/>
+  </customCategories>
+  <customCategories identifier="text_editors" label="Text Editors / Productivity Tools">
+    <features href="extjs.aggrcon#//@repositories.0/@features.0"/>
+    <features href="yedit.aggrcon#//@repositories.0/@features.0"/>
+    <features href="pex.aggrcon#//@repositories.0/@features.0"/>
+    <features href="pex.aggrcon#//@repositories.0/@features.1"/>
+    <features href="twig.aggrcon#//@repositories.0/@features.0"/>
+    <features href="jquery.aggrcon#//@repositories.0/@features.0"/>
+    <features href="emmet.aggrcon#//@repositories.0/@features.0"/>
+    <features href="jshint.aggrcon#//@repositories.0/@features.0"/>
+    <features href="vrapper.aggrcon#//@repositories.0/@features.0"/>
+    <features href="vrapper.aggrcon#//@repositories.0/@features.1"/>
+    <features href="coffescript.aggrcon#//@repositories.0/@features.0"/>
+    <features href="colortheme.aggrcon#//@repositories.0/@features.0"/>
+    <features href="markdown.aggrcon#//@repositories.0/@features.0"/>
+    <features href="rest.aggrcon#//@repositories.0/@features.0"/>
+    <features href="rest.aggrcon#//@repositories.0/@features.1"/>
+    <features href="darker_theme.aggrcon#//@repositories.0/@features.0"/>
+    <features href="cucumber.aggrcon#//@repositories.0/@features.0"/>
+    <features href="less.aggrcon#//@repositories.0/@features.0"/>
+  </customCategories>
+  <customCategories identifier="toolchains" label="Toolchains">
+    <features href="composer.aggrcon#//@repositories.0/@features.0"/>
+    <features href="pex.aggrcon#//@repositories.0/@features.2"/>
+    <features href="pex.aggrcon#//@repositories.0/@features.3"/>
+    <features href="phpmaven.aggrcon#//@repositories.0/@features.0"/>
+    <features href="zend.aggrcon#//@repositories.0/@features.0"/>
+    <features href="zend.aggrcon#//@repositories.0/@features.1"/>
+  </customCategories>
+  <customCategories identifier="tools" label="Tools">
+    <features href="phpaspect.aggrcon#//@repositories.0/@features.0"/>
+    <features href="pti.aggrcon#//@repositories.0/@features.0"/>
+    <features href="pti.aggrcon#//@repositories.0/@features.2"/>
+    <features href="pti.aggrcon#//@repositories.0/@features.3"/>
+    <features href="pti.aggrcon#//@repositories.0/@features.4"/>
+    <features href="pti.aggrcon#//@repositories.0/@features.5"/>
+    <features href="pti.aggrcon#//@repositories.0/@features.6"/>
+    <features href="makegood.aggrcon#//@repositories.0/@features.0"/>
+  </customCategories>
+</aggregator:Aggregation>

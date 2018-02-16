@@ -10,7 +10,7 @@
 	<properties>
 		<tycho-version>1.0.0</tycho-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<eclipse.name>neon</eclipse.name>
+		<eclipse.name>oxygen</eclipse.name>
 	</properties>
 	<repositories>
 		<repository>
@@ -80,11 +80,36 @@
 				<artifactId>tycho-eclipserun-plugin</artifactId>
 				<version>${tycho-version}</version>
 				<configuration>
-					<appArgLine>-application org.eclipse.b3.cli.headless aggregate --buildModel ${project.basedir}/mirror.b3aggr</appArgLine>
-					<argLine>-Xmx512m -XX:MaxPermSize=256m</argLine>
+					<applicationsArgs>
+    					<arg>-application</arg>
+    					<applicationsArg>org.eclipse.cbi.p2repo.cli.headless</applicationsArg>
+						<applicationsArg>aggregate</applicationsArg>
+						<applicationsArg>--buildModel</applicationsArg>
+						<applicationsArg>${project.basedir}/mirror.aggr</applicationsArg>
+						<applicationsArg>--buildRoot</applicationsArg>
+						<applicationsArg>${project.build.directory}/repository</applicationsArg>
+						<applicationsArg>--eclipseLogLevel</applicationsArg>
+						<applicationsArg>INFO</applicationsArg>
+						<applicationsArg>--logLevel</applicationsArg>
+						<applicationsArg>INFO</applicationsArg>
+						<applicationsArg>--action</applicationsArg>
+						<applicationsArg>CLEAN_BUILD</applicationsArg>
+					</applicationsArgs>
+					<jvmArgs>
+						<jvmArg>-Xms64M</jvmArg>
+						<jvmArg>-Xmx512M</jvmArg>
+					</jvmArgs>
 					<dependencies>
 						<dependency>
-							<artifactId>org.eclipse.b3.aggregator.engine.feature</artifactId>
+							<artifactId>org.eclipse.cbi.p2repo.aggregator.engine.feature</artifactId>
+							<type>eclipse-feature</type>
+						</dependency>
+						<dependency>
+							<artifactId>org.eclipse.equinox.p2.core.feature</artifactId>
+							<type>eclipse-feature</type>
+						</dependency>
+						<dependency>
+							<artifactId>org.eclipse.equinox.core.feature</artifactId>
 							<type>eclipse-feature</type>
 						</dependency>
 					</dependencies>
@@ -92,12 +117,7 @@
 						<repository>
 							<id>b3-headless</id>
 							<layout>p2</layout>
-							<url>http://download.eclipse.org/modeling/emft/b3/headless-4.4/</url>
-						</repository>
-						<repository>
-							<id>b3</id>
-							<layout>p2</layout>
-							<url>http://download.eclipse.org/modeling/emft/b3/updates-4.4/</url>
+							<url>http://download.eclipse.org/cbi/updates/aggregator/headless/4.7/</url>
 						</repository>
 						<repository>
 							<id>eclipse</id>
@@ -114,18 +134,6 @@
 						<phase>compile</phase>
 					</execution>
 				</executions>
-			</plugin>
-			<!-- clean the repo otherwise the old .jars pile up -->
-			<plugin>
-				<artifactId>maven-clean-plugin</artifactId>
-				<version>2.4.1</version>
-				<configuration>
-					<filesets>
-						<fileset>
-							<directory>${project.basedir}/mirror/final</directory>
-						</fileset>
-					</filesets>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
