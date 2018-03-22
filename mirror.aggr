@@ -30,7 +30,7 @@
     <contributions href="darker_theme.aggrcon#/"/>
     <contributions href="cucumber.aggrcon#/"/>
     <contributions href="less.aggrcon#/"/>
-    <validationRepositories location="http://download.eclipse.org/releases/oxygen"/>
+    <validationRepositories location="http://download.eclipse.org/releases/photon"/>
     <validationRepositories location="http://download.eclipse.org/eclipse/updates/4.7"/>
     <validationRepositories location="http://download.eclipse.org/technology/dltk/updates-dev/latest-nightly/"/>
     <validationRepositories location="http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/"/>
