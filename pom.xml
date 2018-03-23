@@ -10,7 +10,7 @@
 	<properties>
 		<tycho-version>1.1.0</tycho-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<eclipse.name>photon</eclipse.name>
+		<eclipse.name>oxygen</eclipse.name>
 	</properties>
 	<repositories>
 		<repository>
