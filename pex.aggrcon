@@ -4,13 +4,7 @@
     <features name="org.eclipse.php.smarty_feature.feature.group">
       <categories href="mirror.aggr#//@customCategories[identifier='text_editors']"/>
     </features>
-    <features name="org.sourceforge.jsonedit.feature.feature.group">
-      <categories href="mirror.aggr#//@customCategories[identifier='text_editors']"/>
-    </features>
     <features name="si.gos.transpiler.feature.group">
-      <categories href="mirror.aggr#//@customCategories[identifier='toolchains']"/>
-    </features>
-    <features name="org.ganoro.phing.feature.feature.group">
       <categories href="mirror.aggr#//@customCategories[identifier='toolchains']"/>
     </features>
   </repositories>

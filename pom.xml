@@ -8,9 +8,9 @@
 	<version>0.0.4</version>
 	<packaging>pom</packaging>
 	<properties>
-		<tycho-version>1.1.0</tycho-version>
+		<tycho-version>1.2.0</tycho-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<eclipse.name>oxygen</eclipse.name>
+		<eclipse.name>photon</eclipse.name>
 	</properties>
 	<repositories>
 		<repository>
@@ -42,11 +42,6 @@
 						<environment>
 							<os>linux</os>
 							<ws>gtk</ws>
-							<arch>x86</arch>
-						</environment>
-						<environment>
-							<os>macosx</os>
-							<ws>cocoa</ws>
 							<arch>x86</arch>
 						</environment>
 						<environment>

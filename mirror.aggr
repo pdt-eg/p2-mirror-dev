@@ -3,7 +3,6 @@
   <validationSets label="main">
     <contributions href="pex.aggrcon#/"/>
     <contributions href="symfony.aggrcon#/"/>
-    <contributions href="composer.aggrcon#/"/>
     <contributions href="indexing.aggrcon#/"/>
     <contributions href="doctrine.aggrcon#/"/>
     <contributions href="twig.aggrcon#/"/>
@@ -15,9 +14,6 @@
     <contributions href="yii.aggrcon#/"/>
     <contributions href="drupal.aggrcon#/"/>
     <contributions href="phpmaven.aggrcon#/"/>
-    <contributions href="phpaspect.aggrcon#/"/>
-    <contributions href="pti.aggrcon#/"/>
-    <contributions href="makegood.aggrcon#/"/>
     <contributions href="jshint.aggrcon#/"/>
     <contributions href="vrapper.aggrcon#/"/>
     <contributions href="coffescript.aggrcon#/"/>
@@ -31,7 +27,7 @@
     <contributions href="cucumber.aggrcon#/"/>
     <contributions href="less.aggrcon#/"/>
     <validationRepositories location="http://download.eclipse.org/releases/photon"/>
-    <validationRepositories location="http://download.eclipse.org/eclipse/updates/4.7"/>
+    <validationRepositories location="http://download.eclipse.org/eclipse/updates/4.8"/>
     <validationRepositories location="http://download.eclipse.org/technology/dltk/updates-dev/latest-nightly/"/>
     <validationRepositories location="http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/"/>
     <validationRepositories location="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
@@ -65,7 +61,6 @@
     <features href="extjs.aggrcon#//@repositories.0/@features.0"/>
     <features href="yedit.aggrcon#//@repositories.0/@features.0"/>
     <features href="pex.aggrcon#//@repositories.0/@features.0"/>
-    <features href="pex.aggrcon#//@repositories.0/@features.1"/>
     <features href="twig.aggrcon#//@repositories.0/@features.0"/>
     <features href="jquery.aggrcon#//@repositories.0/@features.0"/>
     <features href="emmet.aggrcon#//@repositories.0/@features.0"/>
@@ -82,21 +77,9 @@
     <features href="less.aggrcon#//@repositories.0/@features.0"/>
   </customCategories>
   <customCategories identifier="toolchains" label="Toolchains">
-    <features href="composer.aggrcon#//@repositories.0/@features.0"/>
-    <features href="pex.aggrcon#//@repositories.0/@features.2"/>
-    <features href="pex.aggrcon#//@repositories.0/@features.3"/>
+    <features href="pex.aggrcon#//@repositories.0/@features.1"/>
     <features href="phpmaven.aggrcon#//@repositories.0/@features.0"/>
     <features href="zend.aggrcon#//@repositories.0/@features.0"/>
     <features href="zend.aggrcon#//@repositories.0/@features.1"/>
-  </customCategories>
-  <customCategories identifier="tools" label="Tools">
-    <features href="phpaspect.aggrcon#//@repositories.0/@features.0"/>
-    <features href="pti.aggrcon#//@repositories.0/@features.0"/>
-    <features href="pti.aggrcon#//@repositories.0/@features.2"/>
-    <features href="pti.aggrcon#//@repositories.0/@features.3"/>
-    <features href="pti.aggrcon#//@repositories.0/@features.4"/>
-    <features href="pti.aggrcon#//@repositories.0/@features.5"/>
-    <features href="pti.aggrcon#//@repositories.0/@features.6"/>
-    <features href="makegood.aggrcon#//@repositories.0/@features.0"/>
   </customCategories>
 </aggregator:Aggregation>
