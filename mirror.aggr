@@ -6,14 +6,9 @@
     <contributions href="indexing.aggrcon#/"/>
     <contributions href="doctrine.aggrcon#/"/>
     <contributions href="twig.aggrcon#/"/>
-    <contributions href="extjs.aggrcon#/"/>
     <contributions href="yedit.aggrcon#/"/>
-    <contributions href="jquery.aggrcon#/"/>
     <contributions href="emmet.aggrcon#/"/>
-    <contributions href="magento.aggrcon#/"/>
     <contributions href="yii.aggrcon#/"/>
-    <contributions href="drupal.aggrcon#/"/>
-    <contributions href="phpmaven.aggrcon#/"/>
     <contributions href="jshint.aggrcon#/"/>
     <contributions href="vrapper.aggrcon#/"/>
     <contributions href="coffescript.aggrcon#/"/>
@@ -21,9 +16,7 @@
     <contributions href="colortheme.aggrcon#/"/>
     <contributions href="markdown.aggrcon#/"/>
     <contributions href="rest.aggrcon#/"/>
-    <contributions href="zend.aggrcon#/"/>
     <contributions href="ansicon.aggrcon#/"/>
-    <contributions href="darker_theme.aggrcon#/"/>
     <contributions href="cucumber.aggrcon#/"/>
     <contributions href="less.aggrcon#/"/>
     <validationRepositories location="https://download.eclipse.org/releases/2020-03"/>
@@ -36,16 +29,12 @@
   <configurations operatingSystem="linux" windowSystem="gtk" architecture="x86_64"/>
   <configurations operatingSystem="macosx" windowSystem="cocoa" architecture="x86_64"/>
   <configurations architecture="x86_64"/>
-  <customCategories identifier="ecommerce" label="Ecommerce">
-    <features href="magento.aggrcon#//@repositories.0/@features.0"/>
-  </customCategories>
   <customCategories identifier="frameworks" label="Frameworks / Content Management">
     <features href="symfony.aggrcon#//@repositories.0/@features.0"/>
     <features href="yii.aggrcon#//@repositories.0/@features.0"/>
   </customCategories>
   <customCategories identifier="libraries" label="Libraries">
     <features href="doctrine.aggrcon#//@repositories.0/@features.0"/>
-    <features href="pti.aggrcon#//@repositories.0/@features.1"/>
   </customCategories>
   <customCategories identifier="miscellaneous" label="Miscellaneous">
     <features href="indexing.aggrcon#//@repositories.0/@features.0"/>
@@ -56,11 +45,9 @@
     <features href="pex.aggrcon#//@repositories.1/@features.0"/>
   </customCategories>
   <customCategories identifier="text_editors" label="Text Editors / Productivity Tools">
-    <features href="extjs.aggrcon#//@repositories.0/@features.0"/>
     <features href="yedit.aggrcon#//@repositories.0/@features.0"/>
     <features href="pex.aggrcon#//@repositories.0/@features.0"/>
     <features href="twig.aggrcon#//@repositories.0/@features.0"/>
-    <features href="jquery.aggrcon#//@repositories.0/@features.0"/>
     <features href="emmet.aggrcon#//@repositories.0/@features.0"/>
     <features href="jshint.aggrcon#//@repositories.0/@features.0"/>
     <features href="vrapper.aggrcon#//@repositories.0/@features.0"/>
@@ -70,14 +57,10 @@
     <features href="markdown.aggrcon#//@repositories.0/@features.0"/>
     <features href="rest.aggrcon#//@repositories.0/@features.0"/>
     <features href="rest.aggrcon#//@repositories.0/@features.1"/>
-    <features href="darker_theme.aggrcon#//@repositories.0/@features.0"/>
     <features href="cucumber.aggrcon#//@repositories.0/@features.0"/>
     <features href="less.aggrcon#//@repositories.0/@features.0"/>
   </customCategories>
   <customCategories identifier="toolchains" label="Toolchains">
     <features href="pex.aggrcon#//@repositories.0/@features.1"/>
-    <features href="phpmaven.aggrcon#//@repositories.0/@features.0"/>
-    <features href="zend.aggrcon#//@repositories.0/@features.0"/>
-    <features href="zend.aggrcon#//@repositories.0/@features.1"/>
   </customCategories>
 </aggregator:Aggregation>

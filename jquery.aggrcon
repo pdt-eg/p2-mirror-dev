@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<aggregator:Contribution xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" label="JSDT JQuery" enabled="false">
-  <repositories location="http://dl.bintray.com/pulse00/pdt-extensions/nightly/0.0.5/" description="JQuery">
-    <features name="org.eclipselabs.jsdt.jquery_feature.feature.group">
-      <categories href="mirror.aggr#//@customCategories[identifier='text_editors']"/>
-    </features>
-  </repositories>
-</aggregator:Contribution>

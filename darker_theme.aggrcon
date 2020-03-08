@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<aggregator:Contribution xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" label="Darker Theme" enabled="false">
-  <repositories location="http://jinmingjian.github.io/updatesite/" description="Darker Theme">
-    <features name="eclipse.themes.darker.feature.feature.group">
-      <categories href="mirror.aggr#//@customCategories[identifier='text_editors']"/>
-    </features>
-  </repositories>
-</aggregator:Contribution>
