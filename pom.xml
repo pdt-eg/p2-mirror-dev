@@ -8,9 +8,9 @@
 	<version>0.0.4</version>
 	<packaging>pom</packaging>
 	<properties>
-		<tycho-version>1.2.0</tycho-version>
+		<tycho-version>1.6.0</tycho-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<eclipse.name>photon</eclipse.name>
+		<eclipse.name>2020-03</eclipse.name>
 	</properties>
 	<repositories>
 		<repository>
@@ -40,19 +40,9 @@
 							<arch>x86_64</arch>
 						</environment>
 						<environment>
-							<os>linux</os>
-							<ws>gtk</ws>
-							<arch>x86</arch>
-						</environment>
-						<environment>
 							<os>macosx</os>
 							<ws>cocoa</ws>
 							<arch>x86_64</arch>
-						</environment>
-						<environment>
-							<os>win32</os>
-							<ws>win32</ws>
-							<arch>x86</arch>
 						</environment>
 						<environment>
 							<os>win32</os>
