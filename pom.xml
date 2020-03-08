@@ -81,9 +81,10 @@
 						<applicationsArg>--action</applicationsArg>
 						<applicationsArg>CLEAN_BUILD</applicationsArg>
 					</applicationsArgs>
+					<executionEnvironment>JavaSE-1.8</executionEnvironment>
 					<jvmArgs>
-						<jvmArg>-Xms64M</jvmArg>
-						<jvmArg>-Xmx512M</jvmArg>
+						<jvmArg>-Xms128M</jvmArg>
+						<jvmArg>-Xmx1024M</jvmArg>
 					</jvmArgs>
 					<dependencies>
 						<dependency>
@@ -107,7 +108,7 @@
 						<repository>
 							<id>b3-headless</id>
 							<layout>p2</layout>
-							<url>https://download.eclipse.org/cbi/updates/aggregator/headless/4.8/</url>
+							<url>https://download.eclipse.org/cbi/updates/aggregator/headless/4.13</url>
 						</repository>
 						<repository>
 							<id>eclipse</id>
