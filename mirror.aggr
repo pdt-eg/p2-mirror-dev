@@ -29,22 +29,22 @@
   <configurations operatingSystem="linux" windowSystem="gtk" architecture="x86_64"/>
   <configurations operatingSystem="macosx" windowSystem="cocoa" architecture="x86_64"/>
   <configurations architecture="x86_64"/>
-  <customCategories identifier="frameworks" label="Frameworks / Content Management">
+  <customCategories identifier="frameworks" label="Frameworks / Content Management" description="">
     <features href="symfony.aggrcon#//@repositories.0/@features.0"/>
     <features href="yii.aggrcon#//@repositories.0/@features.0"/>
   </customCategories>
-  <customCategories identifier="libraries" label="Libraries">
+  <customCategories identifier="libraries" label="Libraries" description="">
     <features href="doctrine.aggrcon#//@repositories.0/@features.0"/>
   </customCategories>
-  <customCategories identifier="miscellaneous" label="Miscellaneous">
+  <customCategories identifier="miscellaneous" label="Miscellaneous" description="">
     <features href="indexing.aggrcon#//@repositories.0/@features.0"/>
     <features href="logviewer.aggrcon#//@repositories.0/@features.0"/>
     <features href="ansicon.aggrcon#//@repositories.0/@features.0"/>
   </customCategories>
-  <customCategories identifier="pdt_extensions" label="PDT Extensions">
+  <customCategories identifier="pdt_extensions" label="PDT Extensions" description="">
     <features href="pex.aggrcon#//@repositories.1/@features.0"/>
   </customCategories>
-  <customCategories identifier="text_editors" label="Text Editors / Productivity Tools">
+  <customCategories identifier="text_editors" label="Text Editors / Productivity Tools" description="">
     <features href="yedit.aggrcon#//@repositories.0/@features.0"/>
     <features href="pex.aggrcon#//@repositories.0/@features.0"/>
     <features href="twig.aggrcon#//@repositories.0/@features.0"/>
@@ -60,7 +60,7 @@
     <features href="cucumber.aggrcon#//@repositories.0/@features.0"/>
     <features href="less.aggrcon#//@repositories.0/@features.0"/>
   </customCategories>
-  <customCategories identifier="toolchains" label="Toolchains">
+  <customCategories identifier="toolchains" label="Toolchains" description="">
     <features href="pex.aggrcon#//@repositories.0/@features.1"/>
   </customCategories>
 </aggregator:Aggregation>
