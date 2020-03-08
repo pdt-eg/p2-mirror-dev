@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aggregator:Contribution xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" label="Doctrine Plugin">
-  <repositories location="http://doctrine.dubture.com/nightly" description="Doctrine">
+  <repositories location="https://pulse00.github.io/Doctrine-Eclipse-Plugin/nightly" description="Doctrine">
     <features name="com.dubture.doctrine.feature.feature.group">
       <categories href="mirror.aggr#//@customCategories[identifier='libraries']"/>
     </features>
