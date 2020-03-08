@@ -65,6 +65,7 @@
 				<artifactId>tycho-eclipserun-plugin</artifactId>
 				<version>${tycho-version}</version>
 				<configuration>
+					<argLine>-Dorg.eclipse.ecf.provider.filetransfer.excludeContributors=org.eclipse.ecf.provider.filetransfer.httpclient4</argLine>
 					<applicationsArgs>
     					<arg>-application</arg>
     					<applicationsArg>org.eclipse.cbi.p2repo.cli.headless</applicationsArg>
@@ -97,6 +98,10 @@
 							<artifactId>org.eclipse.equinox.core.feature</artifactId>
 							<type>eclipse-feature</type>
 						</dependency>
+                                                <dependency>
+                                                        <artifactId>org.eclipse.core.net</artifactId>
+                                                        <type>eclipse-plugin</type>
+                                                </dependency>
 					</dependencies>
 					<repositories>
 						<repository>
