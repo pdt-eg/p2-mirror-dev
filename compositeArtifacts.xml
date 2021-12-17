@@ -3,10 +3,10 @@
 <repository name="PDT Extension Updates (dev)"
     type="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository" version="1.0.0">
   <properties size="1">
-    <property name="p2.timestamp" value="15847301520000"/>
+    <property name="p2.timestamp" value="16397595170000"/>
   </properties>
   <children size="3">
-    <child location="https://dl.bintray.com/pulse00/pdt-extensions/nightly/2020-06/" />
+    <child location="https://pdt.w3des.net/mirror/nightly/2022-03/" />
     <child location="https://download.eclipse.org/tools/pdt/updates/latest-nightly" />
     <child location="https://download.eclipse.org/technology/dltk/updates-dev/latest-nightly/" />
   </children>
