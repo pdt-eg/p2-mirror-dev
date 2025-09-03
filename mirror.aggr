@@ -19,7 +19,7 @@
     <contributions href="ansicon.aggrcon#/"/>
     <contributions href="cucumber.aggrcon#/"/>
     <contributions href="less.aggrcon#/"/>
-    <validationRepositories location="https://download.eclipse.org/releases/2020-03"/>
+    <validationRepositories location="https://download.eclipse.org/releases/2025-06"/>
     <validationRepositories location="https://download.eclipse.org/eclipse/updates/4.15"/>
     <validationRepositories location="https://download.eclipse.org/technology/dltk/updates-dev/latest-nightly/"/>
     <validationRepositories location="https://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/"/>
