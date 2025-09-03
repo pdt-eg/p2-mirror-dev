@@ -8,9 +8,9 @@
 	<version>0.0.4</version>
 	<packaging>pom</packaging>
 	<properties>
-		<tycho-version>4.0.2</tycho-version>
+		<tycho-version>4.0.13</tycho-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<eclipse.name>2023-09</eclipse.name>
+		<eclipse.name>2025-06</eclipse.name>
 	</properties>
 	<repositories>
 		<repository>
@@ -59,6 +59,11 @@
 							<ws>win32</ws>
 							<arch>x86_64</arch>
 						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>aarch64</arch>
+						</environment>
 					</environments>
 				</configuration>
 			</plugin>
@@ -91,7 +96,7 @@
 						<applicationsArg>--action</applicationsArg>
 						<applicationsArg>CLEAN_BUILD</applicationsArg>
 					</applicationsArgs>
-					<executionEnvironment>JavaSE-17</executionEnvironment>
+					<executionEnvironment>JavaSE-21</executionEnvironment>
 					<jvmArgs>
 						<jvmArg>-Xms128M</jvmArg>
 						<jvmArg>-Xmx1024M</jvmArg>
